@@ -4,6 +4,10 @@
   --font-family: "Fredoka", sans-serif;
 }
 
+.knowledge-card {
+  padding-top: 150px;
+}
+
 .title {
   text-align: center;
   background-color: white;

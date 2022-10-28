@@ -1,0 +1,28 @@
+.Home {
+  height: 100vh;
+  width: 100%;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planets {
+  width: 100%;
+  height: 50px;
+
+  border-bottom: 1px solid white;
+  border-radius: 0 0 50% 50%;
+  position: relative;
+}
+
+.planet {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-image: url("../assets/images/1_mercury.png");
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+}
