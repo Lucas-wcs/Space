@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../css/Header.css";
 
 function Header() {
@@ -9,27 +10,29 @@ function Header() {
   };
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `}>
-      <div className="navbar-logo">Logo</div>
+      <div to="/" className="navbar-logo">
+        <Link to="/">Logo</Link>
+      </div>
       <ul className="navbar-links">
         <li className="navbar-item slideInDown-1">
-          <a href="/" className=" navbar-link">
-            Acceuil
-          </a>
+          <Link to="/" className=" navbar-link">
+            Home
+          </Link>
         </li>
         <li className="navbar-item slideInDown-2">
-          <a href="/" className=" navbar-link">
-            Planète
-          </a>
+          <Link to="/planets" className=" navbar-link">
+            Planètes
+          </Link>
         </li>
         <li className="navbar-item slideInDown-3">
-          <a href="/" className=" navbar-link">
+          <Link to="/savoir" className=" navbar-link">
             Le sais-tu?
-          </a>
+          </Link>
         </li>
         <li className="navbar-item slideInDown-4">
-          <a href="/" className=" navbar-link">
+          <Link to="/quiz" className=" navbar-link">
             Quizz
-          </a>
+          </Link>
         </li>
       </ul>
       <button
