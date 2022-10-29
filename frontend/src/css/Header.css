@@ -10,6 +10,7 @@
   box-shadow: 0 0 30px 40px rgb(238, 198, 67);
   color: #141414;
   border-radius: 0 0 50% 50%;
+  z-index: 100;
 }
 
 .navbar-logo {
@@ -69,9 +70,13 @@
     transition: all 0.8s ease-out;
   }
 
+  .navbar-logo:hover {
+    scale: 1;
+  }
+
   .show-nav .navbar-links {
     width: 100vw;
-    right: 0;
+    right: -30px;
     visibility: visible;
   }
 
@@ -114,7 +119,7 @@
     height: 3px;
     position: relative;
     border-radius: 3px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     transition: all 0.5 ease-in-out;
   }
   .burger-bar::before,
