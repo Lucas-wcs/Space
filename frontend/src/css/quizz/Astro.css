@@ -1,0 +1,15 @@
+.interrogation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: -100px;
+}
+
+.bulles {
+  width: 50%;
+  margin-bottom: -100px;
+}
+
+.personnage {
+  width: 80%;
+}

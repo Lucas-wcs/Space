@@ -1,7 +1,7 @@
 {
   "name": "template-fullstack",
   "version": "1.0.0",
-  "description": "",
+  "description": "This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School. It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.",
   "main": "index.js",
   "scripts": {
     "setup": "npm i && husky install && npm --prefix ./frontend i && npm --prefix ./backend i",
@@ -17,6 +17,48 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^7.0.0",
-    "husky": "^7.0.0"
-  }
+    "husky": "^7.0.0",
+    "react-router-dom": "^6.4.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "emoji-regex": "^8.0.0",
+    "escalade": "^3.1.1",
+    "ansi-regex": "^5.0.1",
+    "has-flag": "^4.0.0",
+    "ansi-styles": "^4.3.0",
+    "get-caller-file": "^2.0.5",
+    "is-fullwidth-code-point": "^3.0.0",
+    "cliui": "^7.0.4",
+    "react": "^18.2.0",
+    "js-tokens": "^4.0.0",
+    "require-directory": "^2.1.1",
+    "loose-envify": "^1.4.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.4.2",
+    "date-fns": "^2.28.0",
+    "scheduler": "^0.23.0",
+    "string-width": "^4.2.3",
+    "spawn-command": "^0.0.2-1",
+    "supports-color": "^8.1.1",
+    "strip-ansi": "^6.0.1",
+    "tslib": "^1.14.1",
+    "y18n": "^5.0.8",
+    "tree-kill": "^1.2.2",
+    "wrap-ansi": "^7.0.0",
+    "yargs": "^16.2.0",
+    "rxjs": "^6.6.7",
+    "yargs-parser": "^20.2.9",
+    "lodash": "^4.17.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-wcs/Space.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lucas-wcs/Space/issues"
+  },
+  "homepage": "https://github.com/Lucas-wcs/Space#readme"
 }
