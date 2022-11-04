@@ -3,7 +3,73 @@
   width: 100%;
   color: white;
 
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: red;
+}
+
+.main {
+  display: flex;
+  background-color: darkslategray;
+}
+
+.filter {
+  /* position: absolute; */
+  /* left: 50px; */
+  width: 15em;
+  border: 1px white dotted;
+  font-family: 'Fredoka';
+  font-size: 20px;
+}
+
+.filter div {
+  margin: 10px;
+  border: 1px red solid;
+}
+
+.filter div input {
+  margin-right: 20px;
+
+}
+
+.containerPlanets {
+  border: 1px dotted yellow;
+  width: 85em;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.containerCards {
+  border: 2px solid white;
+}
+
+.containerCards.large {
+  grid-column: span 2;
+}
+
+.planetDescription {
+
+  width: 100%;
+
+  border-radius: 20px;
+  background-color: pink;
+  padding: 20px;
+
+}
+
+
+.planetImg {
+  background-color: blueviolet;
+  text-align: center;
 }
