@@ -1,86 +1,45 @@
 import React, { useState } from "react";
-import logo from "@assets/Vector2.svg";
-import "../css/Home.css";
+import Mercury from "@components/home/Mercury";
+import Venus from "@components/home/Venus";
+import Earth from "@components/home/Earth";
+import Mars from "@components/home/Mars";
+import Jupiter from "@components/home/Jupiter";
+import Saturn from "@components/home/Saturn";
+import Uranus from "@components/home/Uranus";
+import Neptune from "@components/home/Neptune";
+// import orbit from "@assets/orbit.svg";
+import astronaut from "../assets/images/astronauts/astronaut_4.png";
+import cloud from "../assets/images/astronauts/cloud.png";
+import "../css/home/Home.css";
 
 function Home() {
   const [info, setInfo] = useState("");
 
   function handleClick(event) {
-    setInfo(() => event.target.className);
+    const classNameFirst = event.target.className.split(" ");
+    setInfo(() => classNameFirst[0]);
   }
 
   return (
     <div className="Home">
-      <div className="planets-container mercury-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="mercury planet"
-          onClick={(event) => handleClick(event)}
-        />
-      </div>
-      <div className="planets-container venus-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="venus planet"
-          onClick={(event) => handleClick(event)}
-        />
-      </div>
-      <div className="planets-container earth-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="earth planet"
-          onClick={(event) => handleClick(event)}
-        />
-      </div>
-      <div className="planets-container mars-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="mars planet"
-          onClick={(event) => handleClick(event)}
-        />
-      </div>
-      <div className="planets-container jupiter-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="jupiter planet"
-          onClick={(event) => handleClick(event)}
-        />
-      </div>
-      <div className="planets-container saturn-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="saturn planet"
-          onClick={(event) => handleClick(event)}
-        >
-          <div className="saturn-halo" />
+      <Mercury handleClick={() => handleClick()} />
+      <Venus handleClick={() => handleClick()} />
+      <Earth handleClick={() => handleClick()} />
+      <Mars handleClick={() => handleClick()} />
+      <Jupiter handleClick={() => handleClick()} />
+      <Saturn handleClick={() => handleClick()} />
+      <Uranus handleClick={() => handleClick()} />
+      <Neptune handleClick={() => handleClick()} />
+
+      <div className="astronaut-container">
+        <img className="cloud" src={cloud} alt="cloud" />
+        <img className="astronaut" src={astronaut} alt="astronaut" />
+        <div className="info">
+          <h1 className="p-info">{info}</h1>
         </div>
-      </div>
-      <div className="planets-container uranus-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="uranus planet"
-          onClick={(event) => handleClick(event)}
-        />
-      </div>
-      <div className="planets-container mercury-container">
-        <img src={logo} alt="orbit" />
-        <div
-          aria-hidden="true"
-          className="neptune planet"
-          onClick={(event) => handleClick(event)}
-        />
-      </div>
-      <div className="display-className">
-        <h1>{info}</h1>
       </div>
     </div>
   );
 }
+
 export default Home;
