@@ -8,7 +8,7 @@ import Saturn from "@components/home/Saturn";
 import Uranus from "@components/home/Uranus";
 import Neptune from "@components/home/Neptune";
 // import orbit from "@assets/orbit.svg";
-import astronaut from "../assets/images/astronauts/astronaut-home.png";
+import astronaut from "../assets/images/astronauts/astronaut_4.png";
 import cloud from "../assets/images/astronauts/cloud.png";
 import "../css/home/Home.css";
 
