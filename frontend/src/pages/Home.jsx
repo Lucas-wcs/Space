@@ -10,7 +10,6 @@ function Home() {
   const [info, setInfo] = useState("");
 
   function handleClick(planetName) {
-    // const classNameFirst = planetName.target.className.split(" ");
     setInfo(planetName);
   }
 
@@ -24,7 +23,11 @@ function Home() {
         .filter((el) => el.isPlanet === true)
         .map((item) => {
           return (
-            <Planet name={item.englishName} handle={(a) => handleClick(a)} />
+            <Planet
+              key={item.id}
+              name={item.englishName}
+              handle={(a) => handleClick(a)}
+            />
           );
         })}
 
