@@ -7,7 +7,7 @@ import "../css/home/Home.css";
 import api from "../API-example/API-egz";
 
 function Home() {
-  const [info, setInfo] = useState("1");
+  const [info, setInfo] = useState("");
 
   function handleClick(planetName) {
     // const classNameFirst = planetName.target.className.split(" ");
