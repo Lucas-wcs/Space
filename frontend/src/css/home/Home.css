@@ -19,17 +19,17 @@
 .planet {
   position: absolute;
   background-size: cover;
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   transition: all 500ms ease-in-out;
   cursor: pointer;
 }
 .planet:hover {
   scale: 1.1;
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
 }
 
-.mercury {
+.Mercury {
   height: 6vh;
   width: 6vh;
   background-image: url("../../assets/images/astres/1_mercury.png");
@@ -38,7 +38,7 @@
   z-index: 8;
 }
 
-.venus {
+.Venus {
   height: 8vh;
   width: 8vh;
   background-image: url("../../assets/images/astres/2_venus.png");
@@ -47,7 +47,7 @@
   z-index: 7;
 }
 
-.earth {
+.Earth {
   height: 8vh;
   width: 8vh;
   background-image: url("../../assets/images/astres/3_earth.png");
@@ -56,7 +56,7 @@
   z-index: 6;
 }
 
-.mars {
+.Mars {
   height: 6.5vh;
   width: 6.5vh;
   background-image: url("../../assets/images/astres/4_mars.png");
@@ -65,10 +65,10 @@
   z-index: 5;
 }
 
-.jupiter-container {
+.Jupiter-container {
   margin: 2vh 0;
 }
-.jupiter {
+.Jupiter {
   height: 13vh;
   width: 13vh;
   background-image: url("../../assets/images/astres/5_jupiter.png");
@@ -78,7 +78,7 @@
   rotate: -20deg;
 }
 
-.saturn {
+.Saturn {
   height: 18vh;
   width: 24.2vh;
   background-image: url("../../assets/images/astres/6_saturn.png");
@@ -91,16 +91,23 @@
   justify-content: center;
   align-items: center;
 }
-/* .saturn-halo {
+.Saturn:hover {
+  box-shadow: none;
+}
+.Saturn-halo {
   height: 12vh;
   width: 12vh;
   position: absolute;
-  box-shadow: 0 0 15px 3px rgb(255, 255, 255, .5);
+  box-shadow: 0 0 15px 3px rgb(255, 255, 255, 0.5);
   border-radius: 50%;
   transition: all 500ms ease-in-out;
-} */
+  z-index: 4;
+}
+.Saturn:hover .Saturn-halo {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}
 
-.uranus {
+.Uranus {
   height: 8vh;
   width: 8vh;
   background-image: url("../../assets/images/astres/7_uranus.png");
@@ -109,7 +116,7 @@
   z-index: 2;
 }
 
-.neptune {
+.Neptune {
   height: 7vh;
   width: 7vh;
   background-image: url("../../assets/images/astres/8_neptune.png");
@@ -162,42 +169,42 @@
     scale: 0.7;
   }
 
-  .mercury {
+  .Mercury {
     left: 65%;
   }
 
-  .venus {
+  .Venus {
     left: 20%;
   }
 
-  .earth {
+  .Earth {
     bottom: calc(-3.5vh + 0.5vw);
     left: 65%;
     z-index: 6;
   }
 
-  .mars {
+  .Mars {
     bottom: calc(-3vh + 1.2vw);
     left: 20%;
   }
 
-  .jupiter-container {
+  .Jupiter-container {
     margin: 0;
   }
-  .jupiter {
+  .Jupiter {
     bottom: calc(-6.2vh + 0.7vw);
     left: 60%;
   }
 
-  .saturn {
+  .Saturn {
     left: 0%;
   }
 
-  .uranus {
+  .Uranus {
     left: 70%;
   }
 
-  .neptune {
+  .Neptune {
     bottom: calc(-3.2vh + 0.5vw);
     left: 15%;
   }
