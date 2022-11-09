@@ -13,3 +13,17 @@
 .personnage {
   width: 80%;
 }
+
+@media screen and (max-width: 767px) {
+  .personnage {
+    width: 45%;
+  }
+
+  .bulles {
+    width: 45%;
+    height: 50%;
+  }
+
+  .interrogation {
+  }
+}
