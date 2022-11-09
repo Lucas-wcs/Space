@@ -1,8 +1,7 @@
 .Quiz {
   height: 100vh;
   width: 100%;
-  color: white;
-
+  padding-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "@assets/favicon.svg";
 import "../css/Header.css";
 
 function Header() {
@@ -11,7 +12,9 @@ function Header() {
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `}>
       <div to="/" className="navbar-logo">
-        <Link to="/">Logo</Link>
+        <Link to="/">
+          <img className="logo" src={logo} alt="logo" />
+        </Link>
       </div>
       <ul className="navbar-links">
         <li className="navbar-item slideInDown-1">

@@ -14,11 +14,18 @@
 }
 
 .navbar-logo {
-  transition: all 100ms ease-in-out;
+  filter: drop-shadow(0px 10px 4px #000000);
+  /* box-shadow: 0 0 10px 10px black; */
 }
 .navbar-logo:hover {
   scale: 1.1;
   cursor: pointer;
+}
+
+.navbar-logo .logo {
+  height: 70px;
+  width: 70px;
+  transition: all 100ms ease-in-out;
 }
 
 .navbar-links {
