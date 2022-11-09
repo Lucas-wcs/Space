@@ -2,7 +2,7 @@
 
 .cubeQestion {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 80%;
   height: 80%;
@@ -27,14 +27,21 @@
   border-radius: 7px;
 }
 .suivant {
-  width: 40%;
-  height: 10%;
+  width: 50%;
+  height: 15%;
   border-radius: 10px;
   background-color: rgb(104, 162, 18);
   font-family: "Fredoka", sans-serif;
   color: #eef0f2;
+  margin-top: 10px;
 }
 
 .vert {
   background-color: green;
+}
+
+@media screen and (max-width: 767px) {
+  .cubeQestion {
+    margin-bottom: 0;
+  }
 }
