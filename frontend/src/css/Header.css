@@ -11,6 +11,7 @@
   color: #141414;
   border-radius: 0 0 50% 50%;
   z-index: 100;
+  top: 0;
 }
 
 .navbar-logo {

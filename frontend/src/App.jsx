@@ -5,6 +5,7 @@ import Home from "@pages/Home";
 import Planets from "@pages/Planets";
 import Savoir from "@pages/Savoir";
 import Quiz from "@pages/Quiz";
+import Footer from "@components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/quiz" element={<Quiz />} />
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

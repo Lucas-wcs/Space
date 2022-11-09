@@ -1,0 +1,24 @@
+.footer {
+  position: fixed;
+  z-index: -1;
+  height: 70px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 0 15px 20px rgb(133, 133, 133);
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer li {
+    color: white;
+    margin-bottom: 0;
+}
+
+.footer .info-container {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
