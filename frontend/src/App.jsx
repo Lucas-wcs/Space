@@ -6,11 +6,14 @@ import Planets from "@pages/Planets";
 import Savoir from "@pages/Savoir";
 import Quiz from "@pages/Quiz";
 import Footer from "@components/Footer";
+import GeneralStars from "@components/GeneralStars";
+import "./css/stars/GeneralStars.css";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <GeneralStars />
         <Header />
         <Routes>
           <Route>
