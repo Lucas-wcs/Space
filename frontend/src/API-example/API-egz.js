@@ -1,7 +1,7 @@
 const api = {
   planets: [
     {
-      url: "/assets/planets/1_mercury.png",
+      url: "/assets/images/planets/1_mercury.png",
       id: "mercure",
       name: "Mercure",
       englishName: "Mercury",
@@ -48,7 +48,7 @@ const api = {
       discoveryDate: "1631",
     },
     {
-      url: "/assets/planets/2_venus.png",
+      url: "/assets/images/planets/2_venus.png",
       id: "venus",
       name: "Vénus",
       englishName: "Venus",
@@ -94,7 +94,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/3_earth.png",
+      url: "/assets/images/planets/3_earth.png",
       id: "terre",
       name: "Terre",
       englishName: "Earth",
@@ -143,7 +143,7 @@ const api = {
       discoveryDate: "",
     },
     {
-      url: "/assets/planets/3.1_moon.png",
+      url: "/assets/images/planets/3.1_moon.png",
       id: "lune",
       name: "Lune",
       englishName: "Moon",
@@ -189,7 +189,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/4_mars.png",
+      url: "/assets/images/planets/4_mars.png",
       id: "mars",
       name: "Mars",
       englishName: "Mars",
@@ -235,7 +235,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/4-1_phobos.png",
+      url: "/assets/images/planets/4-1_phobos.png",
       id: "phobos",
       name: "Phobos",
       englishName: "Phobos",
@@ -271,7 +271,7 @@ const api = {
       discoveryDate: "1877",
     },
     {
-      url: "/assets/planets/4-2_deimos.png",
+      url: "/assets/images/planets/4-2_deimos.png",
       id: "deimos",
       name: "Déimos",
       englishName: "Deimos",
@@ -299,7 +299,7 @@ const api = {
       discoveryDate: "1877",
     },
     {
-      url: "/assets/planets/5_jupiter.png",
+      url: "/assets/images/planets/5_jupiter.png",
       id: "jupiter",
       name: "Jupiter",
       englishName: "Jupiter",
@@ -347,7 +347,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/5-1_io.png",
+      url: "/assets/images/planets/5-1_io.png",
       id: "io",
       name: "Io",
       englishName: "Io",
@@ -375,7 +375,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/5-2_europe.png",
+      url: "/assets/images/planets/5-2_europe.png",
       id: "europa",
       name: "Europa",
       englishName: "Europa",
@@ -406,7 +406,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/5-3_callisto.png",
+      url: "/assets/images/planets/5-3_callisto.png",
       id: "callisto",
       name: "Callisto",
       englishName: "Callisto",
@@ -438,7 +438,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/5-4_ganymede.png",
+      url: "/assets/images/planets/5-4_ganymede.png",
       id: "ganymede",
       name: "Ganymède",
       englishName: "Ganymede",
@@ -466,7 +466,7 @@ const api = {
       discoveryDate: "1610",
     },
     {
-      url: "/assets/planets/6_saturn.png",
+      url: "/assets/images/planets/6_saturn.png",
       id: "saturne",
       name: "Saturne",
       englishName: "Saturn",
@@ -515,7 +515,7 @@ const api = {
       discoveryDate: "prehistoric",
     },
     {
-      url: "/assets/planets/6-1_titan.png",
+      url: "/assets/images/planets/6-1_titan.png",
       id: "titan",
       name: "Titan",
       englishName: "Titan",
@@ -547,7 +547,7 @@ const api = {
       discoveryDate: "1655",
     },
     {
-      url: "/assets/planets/6-2_enceladus.png",
+      url: "/assets/images/planets/6-2_enceladus.png",
       id: "encelade",
       name: "Encelade",
       englishName: "Encelade",
@@ -580,7 +580,7 @@ const api = {
       discoveryDate: "1789",
     },
     {
-      url: "/assets/planets/6-3_iapetus.png",
+      url: "/assets/images/planets/6-3_iapetus.png",
       id: "iapetus",
       name: "Japet",
       englishName: "Iapetus",
@@ -610,7 +610,7 @@ const api = {
       discoveryDate: "1671",
     },
     {
-      url: "/assets/planets/6-4_rhea.png",
+      url: "/assets/images/planets/6-4_rhea.png",
       id: "rhea",
       name: "Rhéa",
       englishName: "Rhea",
@@ -640,7 +640,7 @@ const api = {
       discoveryDate: "1672",
     },
     {
-      url: "/assets/planets/7_uranus.png",
+      url: "/assets/images/planets/7_uranus.png",
       id: "uranus",
       name: "Uranus",
       englishName: "Uranus",
@@ -690,7 +690,7 @@ const api = {
       discoveryDate: "1781",
     },
     {
-      url: "/assets/planets/7-1_titania.png",
+      url: "/assets/images/planets/7-1_titania.png",
       id: "titania",
       name: "Titania",
       englishName: "Titania",
@@ -725,7 +725,7 @@ const api = {
       discoveryDate: "1787",
     },
     {
-      url: "/assets/planets/7-2_oberon.png",
+      url: "/assets/images/planets/7-2_oberon.png",
       id: "oberon",
       name: "Obéron",
       englishName: "Oberon",
@@ -756,7 +756,7 @@ const api = {
       discoveryDate: "1787",
     },
     {
-      url: "/assets/planets/7-3_ariel.png",
+      url: "/assets/images/planets/7-3_ariel.png",
       id: "ariel",
       name: "Ariel",
       englishName: "Ariel",
@@ -787,7 +787,7 @@ const api = {
       discoveryDate: "1851",
     },
     {
-      url: "/assets/planets/7-4_umbriel.png",
+      url: "/assets/images/planets/7-4_umbriel.png",
       id: "umbriel",
       name: "Umbriel",
       englishName: "Umbriel",
@@ -818,7 +818,7 @@ const api = {
       discoveryDate: "1851",
     },
     {
-      url: "/assets/planets/8_neptune.png",
+      url: "/assets/images/planets/8_neptune.png",
       id: "neptune",
       name: "Neptune",
       englishName: "Neptune",
@@ -866,7 +866,7 @@ const api = {
       discoveryDate: "1846",
     },
     {
-      url: "/assets/planets/8-1_triton.png",
+      url: "/assets/images/planets/8-1_triton.png",
       id: "triton",
       name: "Triton",
       englishName: "Triton",
@@ -899,7 +899,7 @@ const api = {
       discoveryDate: "1846",
     },
     {
-      url: "/assets/planets/8-2_nereid.png",
+      url: "/assets/images/planets/8-2_nereid.png",
       id: "nereide",
       name: "Néréide",
       englishName: "Nereid",
@@ -929,7 +929,7 @@ const api = {
       discoveryDate: "1949",
     },
     {
-      url: "/assets/planets/9_pluton.png",
+      url: "/assets/images/planets/9_pluton.png",
       id: "pluton",
       name: "Pluton",
       englishName: "Pluto",
