@@ -8,11 +8,11 @@ const api =
 {
   "planets": [
     {
-      "url": "/assets/planets/1_mercury.png",
+      "url": "/assets/images/planets/1_mercury.png",
       "id": "mercure",
       "name": "Mercure",
       "englishName": "Mercury",
-      "isPlanet": true,
+      "isPlanet": false,
       "isMoon": false,
       "bodyType": "Planet",
       "placement": 1,
@@ -52,7 +52,7 @@ const api =
       "discoveryDate": "1631"
     },
     {
-      "url": "/assets/planets/2_venus.png",
+      "url": "/assets/images/planets/2_venus.png",
       "id": "venus",
       "name": "Vénus",
       "englishName": "Venus",
@@ -98,7 +98,7 @@ const api =
       "discoveryDate": "1610"
     },
     {
-      "url": "/assets/planets/3_earth.png",
+      "url": "/assets/images/planets/3_earth.png",
       "id": "terre",
       "name": "Terre",
       "englishName": "Earth",
@@ -151,24 +151,74 @@ const api =
 function Planets() {
   console.log(api.planets);
 
+  const [searchValue, setSearchValue] = React.useState('')
+  const onSearchValue = (newValue) => { setSearchValue(newValue) }
+
+  const [checkboxPlanets, setCheckboxPlanets] = React.useState(false)
+  const onClickCheckboxPlanets = () => { setCheckboxPlanets(!checkboxPlanets) }
+
+  const [checkboxLune, setCheckboxLune] = React.useState(false)
+  const onClickCheckboxLune = () => { setCheckboxLune() }
+
+  const [checkboxTellurique, setCheckboxTellurique] = React.useState(false)
+  const onClickCheckboxTellurique = () => { setCheckboxTellurique() }
+
+  const [checkboxGazeuse, setCheckboxGazeuse] = React.useState(false)
+  const onClickCheckboxGazeuse = () => { setCheckboxGazeuse() }
+
+  const [checkboxNaine, setCheckboxNaine] = React.useState(false)
+  const onClickCheckboxNaine = () => { setCheckboxNaine() }
+
   return (
     <div className="Planets">
       <div className="intro">
-        <img></img>
+        <img src="./src/assets/images/astronauts/astronaut_1.png"></img>
         <div className="bubble">
           <p>Bienvenue sur la page planète.<br />Ici tu peux voir la liste de tout les astres principaux de notre système solaire.</p>
         </div>
       </div>
 
       <div className="main">
-        <Filter />
+        <Filter
+          onSearchValue={onSearchValue}
+          value={searchValue}
+          onChangeCheckboxPlanets={onClickCheckboxPlanets}
+          onChangeCheckboxLune={onClickCheckboxLune}
+          onChangeCheckboxTellurique={onClickCheckboxTellurique}
+          onChangeCheckboxGazeuse={onClickCheckboxGazeuse}
+          onChangeCheckboxNaine={onClickCheckboxNaine}
+        />
         <div className="containerPlanets">
-          {api.planets.map((planet) => {
+          {api.planets.filter((planet) => {
+            let ret = true;
 
+            let name = planet.name
+              .toLocaleLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .includes(searchValue
+                .toLocaleLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, ""));
+
+            if (checkboxPlanets == true) ret = planet.isPlanet;
+            if (checkboxLune == true) ret = planet.isMoon;
+            if (checkboxGazeuse == true) ret = planet.gazeuse;
+
+            return ret;
+          }).map((planet) => {
             return (
               <div className="containerCards">
-                <PlanetImg name={planet.name} src={planet.url} />
-                <PlanetCard name={planet.name} description={planet["planet-description"]} facts={planet.curiosites["short-description"]} />
+                <PlanetImg
+                  key={planet.url}
+                  name={planet.name}
+                  src={planet.url}
+                />
+                <PlanetCard
+                  key={planet.name}
+                  name={planet.name}
+                  description={planet["planet-description"]}
+                  facts={planet.curiosites["short-description"]} />
               </div>
             )
           })}
