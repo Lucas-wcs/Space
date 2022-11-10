@@ -5,6 +5,7 @@ import "../css/quizz/Quiz.css";
 
 function Quiz() {
   const [newQuest, setNewQuest] = React.useState(0);
+
   function parent() {
     setNewQuest((prev) => {
       return prev + 1;
