@@ -5,6 +5,7 @@ import Home from "@pages/Home";
 import Planets from "@pages/Planets";
 import Savoir from "@pages/Savoir";
 import Quiz from "@pages/Quiz";
+import Footer from "@components/Footer";
 import GeneralStars from "@components/GeneralStars";
 import "./css/stars/GeneralStars.css";
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/quiz" element={<Quiz />} />
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

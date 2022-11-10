@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
+
+
+function GeneralStars() {
+  const [stars, setStars] = useState([]);
+
 import useWindowSize from "../hooks/useWindowSize";
 
 function GeneralStars() {
   const [stars, setStars] = useState([]);
   const [width, height] = useWindowSize();
+
 
   useEffect(() => {
     const tabTmp = [];
