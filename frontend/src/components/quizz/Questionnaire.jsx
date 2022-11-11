@@ -4,10 +4,19 @@ import PropTypes from "prop-types";
 
 function Questionnaire({ question, responses, solution, parentProp }) {
   const [quesSuiv, setQueSuiv] = React.useState(false);
+  // const [respColors, setRepColor] = React.useState(0);
+
   function suite() {
     parentProp();
     setQueSuiv(!quesSuiv);
   }
+
+  // function changeColor() {
+  // setRepColor() => {
+  //   return
+  // }
+  // }
+
   function compareResponse(voila) {
     if (voila === solution) {
       console.warn("bravo");

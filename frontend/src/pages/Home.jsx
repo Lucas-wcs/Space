@@ -1,35 +1,35 @@
-import React, { useState } from "react";
-import Mercury from "@components/home/Mercury";
-import Venus from "@components/home/Venus";
-import Earth from "@components/home/Earth";
-import Mars from "@components/home/Mars";
-import Jupiter from "@components/home/Jupiter";
-import Saturn from "@components/home/Saturn";
-import Uranus from "@components/home/Uranus";
-import Neptune from "@components/home/Neptune";
-// import orbit from "@assets/orbit.svg";
+import React, { useEffect, useState } from "react";
+import Planet from "@components/home/Planet";
 import astronaut from "../assets/images/astronauts/astronaut_4.png";
 import cloud from "../assets/images/astronauts/cloud.png";
 import "../css/home/Home.css";
 
-function Home() {
-  const [info, setInfo] = useState("");
+import api from "../API-example/API-egz";
 
-  function handleClick(event) {
-    const classNameFirst = event.target.className.split(" ");
-    setInfo(() => classNameFirst[0]);
+function Home() {
+  const [info, setInfo] = useState("Welcome");
+
+  function handleClick(planetName) {
+    setInfo(planetName);
   }
+
+  useEffect(() => {
+    console.warn(info);
+  }, [info]);
 
   return (
     <div className="Home">
-      <Mercury handleClick={() => handleClick()} />
-      <Venus handleClick={() => handleClick()} />
-      <Earth handleClick={() => handleClick()} />
-      <Mars handleClick={() => handleClick()} />
-      <Jupiter handleClick={() => handleClick()} />
-      <Saturn handleClick={() => handleClick()} />
-      <Uranus handleClick={() => handleClick()} />
-      <Neptune handleClick={() => handleClick()} />
+      {api.planets
+        .filter((el) => el.isPlanet === true)
+        .map((item) => {
+          return (
+            <Planet
+              key={item.id}
+              name={item.englishName}
+              handle={(a) => handleClick(a)}
+            />
+          );
+        })}
 
       <div className="astronaut-container">
         <img className="cloud" src={cloud} alt="cloud" />
