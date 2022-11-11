@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from "react";
-
-
-function GeneralStars() {
-  const [stars, setStars] = useState([]);
-
 import useWindowSize from "../hooks/useWindowSize";
 
 function GeneralStars() {
   const [stars, setStars] = useState([]);
   const [width, height] = useWindowSize();
-
 
   useEffect(() => {
     const tabTmp = [];
@@ -27,9 +21,10 @@ function GeneralStars() {
   return (
     <div className="general-background">
       <div className="background">
-        {stars.map((star) => {
+        {stars.map((star, index) => {
           return (
             <div
+              key={star[index]}
               className="stars"
               style={{
                 position: "absolute",

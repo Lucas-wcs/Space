@@ -1,5 +1,5 @@
 .Quiz {
-  height: 100vh;
+  height: calc(100vh - 120px);
   width: 100%;
   padding-left: 5%;
   display: flex;
