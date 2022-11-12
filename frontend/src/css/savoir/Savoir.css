@@ -82,6 +82,7 @@
 }
 
 .knowledge {
+  height: calc(100% - 70px);
   position: relative;
   display: flex;
   flex-direction: column;

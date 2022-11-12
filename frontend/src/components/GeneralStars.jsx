@@ -21,9 +21,10 @@ function GeneralStars() {
   return (
     <div className="general-background">
       <div className="background">
-        {stars.map((star) => {
+        {stars.map((star, index) => {
           return (
             <div
+              key={star[index]}
               className="stars"
               style={{
                 position: "absolute",

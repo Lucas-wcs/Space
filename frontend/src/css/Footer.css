@@ -1,12 +1,9 @@
 .footer {
-  position: absolute;
   z-index: -1;
   height: 70px;
   width: 100%;
   background-color: gray;
   border-radius: 50% 50% 0 0;
-  box-shadow: 0 0 15px 20px rgb(133, 133, 133);
-  bottom: 0px;
   color: rgb(255, 255, 255);
 }
 .footer-content {
