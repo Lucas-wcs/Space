@@ -1,48 +1,18 @@
 .Quiz {
   height: calc(100vh - 122px);
-  width: 100%;
-  padding: 20px;
+  width: 90vw;
+  margin: auto auto;
+  display: flex;
+  gap: 20px;
 }
 
-.questionnaire {
-  width: 80%;
-  height: 80%;
-  margin-top: 130px;
-}
-
-.persoBulle {
-  margin-top: 15px;
-  width: 50%;
-  height: 80%;
-}
-
-.personnage {
-  position: absolute;
-  height: 75%;
-  right: auto;
-  bottom: -10%;
-}
-
-@media screen and (max-width: 767px) {
-  .Quiz {
+@media screen and (max-width: 600px) {
+  /* .Quiz {
     position: relative;
     left: -5%;
     padding: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .personnage {
-    position: absolute;
-    width: 70%;
-    right: -5%;
-    height: auto;
-  }
-
-  .questionnaire {
-    width: 80%;
-    height: 80%;
-    margin-top: 90px;
-  }
+  } */
 }

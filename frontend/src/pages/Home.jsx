@@ -19,7 +19,7 @@ function Home() {
       .get("http://localhost:5007/api/planets")
       .then((result) => setApi(result.data))
       .catch((err) => console.error(err));
-  });
+  }, []);
 
   return (
     <div className="Home">

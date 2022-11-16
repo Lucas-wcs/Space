@@ -17,7 +17,7 @@ function Questionnaire({
     parentProp();
     setQueSuiv(!quesSuiv);
     setRespColor(!respColors);
-    trueFalse(undefined);
+    trueFalse(0);
   }
 
   function compareResponse(voila) {
@@ -25,10 +25,10 @@ function Questionnaire({
 
     if (voila === solution) {
       setSomme(somme + 1);
-      trueFalse(true);
+      trueFalse(2);
       console.warn("bravo");
     } else {
-      trueFalse(false);
+      trueFalse(1);
       console.warn("dommage");
     }
     setQueSuiv(true);
@@ -65,7 +65,7 @@ function Questionnaire({
   }
 
   return (
-    <div className="cubeQestion">
+    <div className="questionnaire">
       <p className="question_titre">{question}</p>
       <button
         type="button"
@@ -104,7 +104,5 @@ Questionnaire.propTypes = {
   solution: PropTypes.string.isRequired,
   question: PropTypes.string.isRequired,
   trueFalse: PropTypes.func.isRequired,
-  responses: PropTypes.arrayOf(
-    PropTypes.shape([PropTypes.string, PropTypes.string, PropTypes.string])
-  ).isRequired,
+  responses: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
