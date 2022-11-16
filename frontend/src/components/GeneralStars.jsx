@@ -7,6 +7,7 @@ function GeneralStars() {
     const tabTmp = [];
     for (let i = 0; i < 800; i += 1) {
       tabTmp.push({
+        id: i,
         left: Math.floor(Math.random() * window.innerWidth),
         top: Math.floor(Math.random() * window.innerHeight),
         size: Math.random() * 3,
@@ -22,6 +23,7 @@ function GeneralStars() {
         {stars.map((star) => {
           return (
             <div
+              key={star.id}
               className="stars"
               style={{
                 position: "absolute",

@@ -1,10 +1,10 @@
 .Planets {
-  /* height: 100vh;
-  width: 100%; */
+  /* height: 100vh;*/
+  width: 100%;
   color: white;
-
-
-
+  border: solid 1px pink;
+  margin-left: 5%;
+  margin-right: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,17 +12,22 @@
 }
 
 .intro {
-  margin-top: 140 px;
+  margin-top: 160px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.intro .bubble {
+  background-image: "../assets/images/Bulle.png";
 }
 
 .main {
+  width: 100%;
   display: flex;
   background-color: rgba(47, 79, 79, 0.5);
-
 }
 
 .filter {
@@ -30,7 +35,7 @@
   /* left: 50px; */
   width: 15em;
   border: 1px white dotted;
-  font-family: 'Fredoka';
+  font-family: "Fredoka";
   font-size: 20px;
 }
 
@@ -41,12 +46,11 @@
 
 .filter div input {
   margin-right: 20px;
-
 }
 
 .containerPlanets {
   border: 1px dotted yellow;
-  width: 85em;
+
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
@@ -61,17 +65,13 @@
 }
 
 .planetDescription {
-
   width: 100%;
 
   border-radius: 20px;
   background-color: pink;
   padding: 20px;
-
 }
 
-
 .planetImg {
-
   text-align: center;
 }
