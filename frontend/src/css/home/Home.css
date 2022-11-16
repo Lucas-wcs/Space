@@ -1,8 +1,9 @@
 .Home {
-  height: 100vh;
+  position: relative;
+  height: calc(100vh - 120px);
   width: 100vw;
   color: white;
-  padding-top: 120px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -19,7 +20,6 @@
 .planet {
   position: absolute;
   background-size: cover;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   transition: all 500ms ease-in-out;
   cursor: pointer;
@@ -29,10 +29,32 @@
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
 }
 
+.planets-container *:not(.Saturn, .orbit) {
+  animation: blinking 3000ms infinite linear,
+    comein 1000ms cubic-bezier(0.51, 0.98, 0.62, 1.17);
+}
+@keyframes blinking {
+  0% {
+    box-shadow: 0px 0px 10px 5px rgba(204, 207, 254, 0.4);
+  }
+  25% {
+    box-shadow: 0px 0px 10px 5px rgba(204, 207, 254, 0.6);
+  }
+  50% {
+    box-shadow: 0px 0px 10px 5px rgba(204, 207, 254, 0.8);
+  }
+  75% {
+    box-shadow: 0px 0px 10px 5px rgba(204, 207, 254, 0.6);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 5px rgba(204, 207, 254, 0.4);
+  }
+}
+
 .Mercury {
   height: 6vh;
   width: 6vh;
-  background-image: url("../../assets/images/astres/1_mercury.png");
+  background-image: url("../../assets/images/planets/1_mercury.png");
   bottom: calc(-3vh + 0.8vw);
   left: 30%;
   z-index: 8;
@@ -41,7 +63,7 @@
 .Venus {
   height: 8vh;
   width: 8vh;
-  background-image: url("../../assets/images/astres/2_venus.png");
+  background-image: url("../../assets/images/planets/2_venus.png");
   bottom: calc(-4.5vh + 2vw);
   left: 80%;
   z-index: 7;
@@ -50,7 +72,7 @@
 .Earth {
   height: 8vh;
   width: 8vh;
-  background-image: url("../../assets/images/astres/3_earth.png");
+  background-image: url("../../assets/images/planets/3_earth.png");
   bottom: calc(-4vh + 0.5vw);
   left: 60%;
   z-index: 6;
@@ -59,7 +81,7 @@
 .Mars {
   height: 6.5vh;
   width: 6.5vh;
-  background-image: url("../../assets/images/astres/4_mars.png");
+  background-image: url("../../assets/images/planets/4_mars.png");
   bottom: calc(-2.3vh + 1.2vw);
   left: 15%;
   z-index: 5;
@@ -71,7 +93,7 @@
 .Jupiter {
   height: 13vh;
   width: 13vh;
-  background-image: url("../../assets/images/astres/5_jupiter.png");
+  background-image: url("../../assets/images/planets/5_jupiter.png");
   bottom: calc(-7.1vh + 0.7vw);
   left: 30%;
   z-index: 4;
@@ -81,7 +103,7 @@
 .Saturn {
   height: 18vh;
   width: 24.2vh;
-  background-image: url("../../assets/images/astres/6_saturn.png");
+  background-image: url("../../assets/images/planets/6_saturn.png");
   bottom: calc(-8vh + 0.8vw);
   left: 55%;
   z-index: 3;
@@ -110,7 +132,7 @@
 .Uranus {
   height: 8vh;
   width: 8vh;
-  background-image: url("../../assets/images/astres/7_uranus.png");
+  background-image: url("../../assets/images/planets/7_uranus.png");
   bottom: calc(-3.6vh + 2.1vw);
   left: 85%;
   z-index: 2;
@@ -119,9 +141,18 @@
 .Neptune {
   height: 7vh;
   width: 7vh;
-  background-image: url("../../assets/images/astres/8_neptune.png");
+  background-image: url("../../assets/images/planets/8_neptune.png");
   bottom: calc(-4vh + 0.5vw);
   left: 50%;
+}
+
+.astronaut-container {
+  position: absolute;
+  left: 5%;
+  bottom: 0px;
+  height: 200px;
+  width: 200px;
+  z-index: 1000;
 }
 
 .info {
@@ -134,17 +165,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.p-info {
-  filter: drop-shadow(0px 0px 10px rgb(255, 208, 0));
-}
-
-.astronaut-container {
-  position: absolute;
-  left: 5%;
-  bottom: 10%;
-  height: 200px;
-  width: 200px;
 }
 
 .astronaut {
@@ -161,51 +181,60 @@
 
 @media screen and (max-width: 600px) {
   .Home {
-    background-color: rgb(25, 32, 109);
+    height: calc(100vh - 100px);
+    padding-top: 50px;
     gap: 40px;
   }
 
   .planet {
     scale: 0.7;
   }
+  .planet:hover {
+    scale: 0.7;
+  }
 
   .Mercury {
-    left: 65%;
+    left: 23%;
   }
 
   .Venus {
-    left: 20%;
+    left: 63%;
   }
 
   .Earth {
     bottom: calc(-3.5vh + 0.5vw);
-    left: 65%;
+    left: 20%;
     z-index: 6;
   }
 
   .Mars {
     bottom: calc(-3vh + 1.2vw);
-    left: 20%;
+    left: 64%;
   }
 
-  .Jupiter-container {
+  /* .Jupiter-container {
     margin: 0;
-  }
+  } */
   .Jupiter {
     bottom: calc(-6.2vh + 0.7vw);
-    left: 60%;
+    left: 15%;
   }
 
   .Saturn {
-    left: 0%;
+    left: 50%;
   }
 
   .Uranus {
-    left: 70%;
+    left: 20%;
   }
 
   .Neptune {
     bottom: calc(-3.2vh + 0.5vw);
-    left: 15%;
+    left: 65%;
+  }
+  .astronaut-container {
+    scale: 0.7;
+    bottom: -20px;
+    left: 0;
   }
 }

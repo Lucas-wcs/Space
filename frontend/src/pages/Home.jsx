@@ -7,7 +7,7 @@ import "../css/home/Home.css";
 import api from "../API-example/API-egz";
 
 function Home() {
-  const [info, setInfo] = useState("");
+  const [info, setInfo] = useState("Welcome");
 
   function handleClick(planetName) {
     setInfo(planetName);
