@@ -1,42 +1,57 @@
 .interrogation {
+  width: 500px;
+  height: 500px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  color: white;
+  margin: auto 0;
+}
+
+.bulle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bulles {
-  position: relative;
-  padding-left: 13%;
-  margin-top: 7%;
   width: 87%;
 }
 
 .truefalse {
   position: absolute;
-  text-align: center;
-  line-height: normal;
   width: 60%;
-  height: 20%;
-  margin-left: 16%;
-  color: red;
-  font-size: 1.2rem;
+  height: 50%;
+  top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .bulles {
+.rep-paragraph {
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.personnage {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  /* .bulles {
     transform: scaleX(-1);
     width: 90%;
     right: 35%;
     top: 7%;
-  }
+  } */
 
-  .truefalse {
+  /* .truefalse {
     width: 60%;
     height: 20%;
     top: 35%;
     font-size: 1rem;
     left: -40%;
-  }
+  } */
 }
