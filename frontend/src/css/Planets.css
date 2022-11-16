@@ -1,5 +1,5 @@
 .Planets {
-  /* height: 100vh;*/
+  height: calc(100vh - 122px);
   width: 100%;
   color: white;
   border: solid 1px pink;

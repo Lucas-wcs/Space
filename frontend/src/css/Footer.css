@@ -1,0 +1,77 @@
+.footer {
+  height: 70px;
+  width: 100vw;
+  background-image: url("../assets/images/moon_footer.png");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+.footer-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content li {
+  color: white;
+  margin-bottom: 0;
+}
+
+.footer-content .info-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.footer-content .icon {
+  height: 30px;
+  width: 30px;
+}
+
+.fb {
+  color: rgb(156, 156, 255);
+}
+.twitter {
+  color: rgb(147, 147, 255);
+}
+.yt {
+  color: red;
+}
+.email {
+  color: rgb(165, 165, 255);
+}
+
+.footer-content .social-container {
+  position: absolute;
+  top: -35px;
+  left: calc(50% - 100px);
+  display: flex;
+  gap: 30px;
+}
+
+.footer-content a {
+  scale: 1;
+  cursor: pointer;
+}
+.footer-content a:hover {
+  scale: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content .info-container {
+    padding-top: 10px;
+  }
+
+  .footer-content li {
+    font-size: 0.5rem;
+  }
+
+  .footer-content .social-container {
+    top: -35px;
+    left: calc(50% - 80px);
+    gap: 10px;
+  }
+
+  .footer-content .icon {
+    scale: 0.5;
+  }
+}

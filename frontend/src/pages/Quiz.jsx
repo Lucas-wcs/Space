@@ -1,36 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Questionnaire from "../components/quizz/Questionnaire";
 import Astro from "../components/quizz/Astro";
 import "../css/quizz/Quiz.css";
+import Certificat from "../components/quizz/Certificat";
 
 function Quiz() {
-  const [newQuest, setNewQuest] = React.useState(0);
-  function parent() {
-    setNewQuest((prev) => {
-      return prev + 1;
-    });
+  const [newQuest, setNewQuest] = useState(0);
+  const [resptrue, setResptrue] = useState(undefined);
+  const [api, setApi] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5007/api/quiz")
+      .then((result) => setApi(result.data))
+      .catch((err) => console.error(err));
+  }, []);
+
+  function trueFalse(verif) {
+    setResptrue(verif);
   }
-  const fakeData = [
-    {
-      question: "Comment s'appelle le plus haut volcan de Mars ?",
-      reponse: ["Pika Pika", "Aya Naka", "Olympus Mons"],
-      solution: "Olympus Mons",
-    },
-    {
-      question: "Et sinon... Pain au chocolat ou chocolatine ?",
-      reponse: ["Pain au chocolat", "Chocolatine", "Les deux"],
-      solution: "Pain au chocolat",
-    },
-  ];
+
+  function parent() {
+    setNewQuest((prev) => prev + 1);
+  }
+
   return (
-    <div className="Quiz">
-      <Questionnaire
-        question={fakeData[newQuest].question}
-        responses={fakeData[newQuest].reponse}
-        solution={fakeData[newQuest].solution}
-        parentProp={() => parent()}
-      />
-      <Astro />
+    <div>
+      {api.length > 0 && (
+        <div className="Quiz">
+          {newQuest < 1 ? (
+            <Questionnaire
+              question={api[newQuest].question}
+              responses={api[newQuest].reponse}
+              solution={api[newQuest].solution}
+              trueFalse={() => trueFalse()}
+              parentProp={() => parent()}
+            />
+          ) : (
+            <Certificat />
+          )}
+
+          {resptrue && (
+            <Astro
+              comfalse={api[0].commentaire_false}
+              comtrue={api[0].commentaire_true}
+              resptrue={resptrue}
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 }

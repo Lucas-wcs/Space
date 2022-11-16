@@ -1,0 +1,201 @@
+:root {
+  --main-size: 1rem;
+  --border-radius: 12px;
+  --font-family: "Fredoka", sans-serif;
+}
+
+/* ASTRONAUT PART */
+
+/* .astronaut-section {
+  position: relative;
+} */
+
+.knowledge-bubble img {
+  position: absolute;
+  margin-top: 30px;
+  margin-right: 2%;
+}
+
+.knowledge-astronaut img {
+  margin-top: 40vh;
+  width: clamp(180px, 60vw, 300px);
+  animation: astronaut 3s infinite ease-in-out;
+  margin-left: 2%;
+}
+
+.knowledge-astronaut button {
+  position: absolute;
+  top: 50vh;
+}
+
+@keyframes astronaut {
+  0% {
+    transform: translateY(-20px) scaleX(-1);
+  }
+  50% {
+    transform: translateY(0) scaleX(-1);
+  }
+  100% {
+    transform: translateY(-20px) scaleX(-1);
+  }
+}
+
+.knowledge-astronaut button {
+  height: clamp(50px, 25vw, 130px);
+  cursor: pointer;
+  background-color: #eec643;
+  font-weight: bold;
+  font-family: var(--font-family);
+  border-radius: 50%;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+    rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.854) 0px 1px 0px inset;
+  font-size: 1.1rem;
+  border: 1px solid #000000;
+}
+
+.knowledge-astronaut button:hover {
+  background-color: #ffffff;
+  border: none;
+}
+
+/* KNOWLEDGE PART */
+
+.title {
+  text-align: center;
+  background-color: white;
+  border-radius: var(--border-radius);
+  margin-inline: 10%;
+  margin-top: 50px;
+  padding-block: 2px;
+  border: 4px solid #eec643;
+  box-shadow: -10px 10px 0px 4px rgba(202, 202, 202, 0.71),
+    -20px 20px 0px 4px rgba(202, 202, 202, 0.21);
+}
+
+.title p {
+  padding-block: 12px;
+  margin-inline: 12px;
+  font-family: var(--font-family);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.9rem);
+  font-weight: bold;
+}
+
+.knowledge {
+  height: calc(100% - 70px);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 12px;
+  margin-block: 180px;
+  margin-inline: 40px;
+  border: 4px solid #eec643;
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+
+.knowledge img {
+  transition: left 0.5s ease;
+  position: absolute;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.knowledge p {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
+  padding-inline: 12px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .knowledge-bubble img {
+    height: 35vh;
+    top: 2vh;
+    left: 20vh;
+  }
+
+  .knowledge img {
+    height: 100px;
+    top: -85px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .knowledge-astronaut button {
+    font-size: 1.3rem;
+  }
+
+  .knowledge-bubble img {
+    height: 35vh;
+    top: 2vh;
+    left: 25vh;
+  }
+
+  .knowledge img {
+    height: 120px;
+    top: -105px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 650px) {
+  .knowledge-astronaut button {
+    font-size: 1.5rem;
+  }
+
+  .knowledge-bubble img {
+    height: 35vh;
+    top: 2vh;
+    left: 32vh;
+  }
+  .knowledge img {
+    height: 140px;
+    top: -115px;
+    left: 220px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .knowledge-astronaut button {
+    font-size: 1.8rem;
+    top: 105vh;
+    margin-left: 30%;
+    transition: all 0.4s ease-out;
+  }
+
+  .knowledge-astronaut button:hover {
+    transform: scale(1.2);
+  }
+
+  .title {
+    padding-block: 1rem;
+  }
+
+  .knowledge {
+    margin-inline: 10%;
+    padding-inline: 8%;
+    margin-bottom: 120px;
+  }
+
+  .knowledge p {
+    grid-area: 1 / 2 / 2 / 2;
+  }
+
+  .knowledge-bubble img {
+    height: 45vh;
+    top: 20vh;
+    left: 35vh;
+  }
+
+  .knowledge-astronaut img {
+    margin-top: 500px;
+    width: 22rem;
+  }
+
+  .knowledge img {
+    height: 190px;
+    left: -100px;
+    top: -90px;
+  }
+}
