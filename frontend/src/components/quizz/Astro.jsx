@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import bulle from "../../assets/images/Bulle.png";
 import "../../css/quizz/Astro.css";
+import image from "../../assets/images/astro-quizz.png";
 
 function Astro({ comfalse, comtrue, resptrue }) {
   return (
@@ -12,6 +13,7 @@ function Astro({ comfalse, comtrue, resptrue }) {
       ) : (
         <p className="truefalse"> {comfalse}</p>
       )}
+      <img className="personnage" src={image} alt="vous" />
     </div>
   );
 }
