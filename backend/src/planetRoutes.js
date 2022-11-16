@@ -6,8 +6,8 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  const planet = planets.filter((pla) => {
-    return pla.id === req.params.id;
+  const planet = planets.filter((plan) => {
+    return plan.id === req.params.id;
   });
   res.status(200).send(planet);
 });

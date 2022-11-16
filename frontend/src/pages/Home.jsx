@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Planet from "@components/home/Planet";
+import Planet from "../components/home/Planet";
 import astronaut from "../assets/images/astronauts/astronaut_4.png";
 import cloud from "../assets/images/astronauts/cloud.png";
 import "../css/home/Home.css";
