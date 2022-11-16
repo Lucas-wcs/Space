@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -13,9 +13,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="social-container">
-          <Link to="https://facebook.com/">
+          <a href="https://facebook.com/">
             <FontAwesomeIcon className="fb icon" icon={faFacebookSquare} />
-          </Link>
+          </a>
           <FontAwesomeIcon className="twitter icon" icon={faTwitter} />
           <FontAwesomeIcon className="yt icon" icon={faYoutube} />
           <FontAwesomeIcon className="email icon" icon={faEnvelope} />

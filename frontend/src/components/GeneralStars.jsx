@@ -9,6 +9,7 @@ function GeneralStars() {
     const tabTmp = [];
     for (let i = 0; i < 800; i += 1) {
       tabTmp.push({
+        id: i,
         left: Math.floor(Math.random() * width),
         top: Math.floor(Math.random() * height),
         size: Math.random() * 3,
@@ -21,10 +22,10 @@ function GeneralStars() {
   return (
     <div className="general-background">
       <div className="background">
-        {stars.map((star, index) => {
+        {stars.map((star) => {
           return (
             <div
-              key={star[index]}
+              key={star.id}
               className="stars"
               style={{
                 position: "absolute",

@@ -1,9 +1,8 @@
 .footer {
-  z-index: -1;
   height: 70px;
-  width: 100%;
-  background-color: gray;
-  border-radius: 50% 50% 0 0;
+  width: 100vw;
+  background-image: url("../assets/images/moon_footer.png");
+  background-size: cover;
   color: rgb(255, 255, 255);
 }
 .footer-content {
@@ -49,7 +48,11 @@
   gap: 30px;
 }
 
-.footer-content .social-container:hover {
+.footer-content a {
+  scale: 1;
+  cursor: pointer;
+}
+.footer-content a:hover {
   scale: 2;
 }
 

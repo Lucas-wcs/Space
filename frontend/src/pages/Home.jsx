@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Planet from "../components/home/Planet";
 import astronaut from "../assets/images/astronauts/astronaut_4.png";
 import cloud from "../assets/images/astronauts/cloud.png";
 import "../css/home/Home.css";
-
-import api from "../API-example/API-egz";
+// import api from "../API-example/API-egz";
 
 function Home() {
+  const [api, setApi] = useState([]);
   const [info, setInfo] = useState("Welcome");
 
   function handleClick(planetName) {
@@ -14,12 +15,15 @@ function Home() {
   }
 
   useEffect(() => {
-    console.warn(info);
-  }, [info]);
+    axios
+      .get("http://localhost:5007/api/planets")
+      .then((result) => setApi(result.data))
+      .catch((err) => console.error(err));
+  });
 
   return (
     <div className="Home">
-      {api.planets
+      {api
         .filter((el) => el.isPlanet === true)
         .map((item) => {
           return (
@@ -30,7 +34,6 @@ function Home() {
             />
           );
         })}
-
       <div className="astronaut-container">
         <img className="cloud" src={cloud} alt="cloud" />
         <img className="astronaut" src={astronaut} alt="astronaut" />
