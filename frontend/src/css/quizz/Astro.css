@@ -1,19 +1,20 @@
 .interrogation {
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  color: white;
+  background-color: red;
 }
 
-.bulles {
+/* .bulles {
   position: relative;
   padding-left: 13%;
   margin-top: 7%;
   width: 87%;
-}
+} */
 
-.truefalse {
+/* .truefalse {
   position: absolute;
   text-align: center;
   line-height: normal;
@@ -22,6 +23,11 @@
   margin-left: 16%;
   color: red;
   font-size: 1.2rem;
+} */
+
+.personnage {
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 767px) {

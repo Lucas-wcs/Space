@@ -65,7 +65,7 @@ function Questionnaire({
   }
 
   return (
-    <div className="cubeQestion">
+    <div className="questionnaire">
       <p className="question_titre">{question}</p>
       <button
         type="button"
