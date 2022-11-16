@@ -46,9 +46,11 @@
 }
 
 .navbar-burger {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   background-color: transparent;
+  background-image: url("../assets/images/soleil-menu.png");
+  background-size: cover;
   border: none;
   color: inherit;
   display: none;
@@ -116,7 +118,7 @@
     cursor: pointer;
   }
 
-  .burger-bar,
+  /* .burger-bar,
   .burger-bar,
   .burger-bar::before,
   .burger-bar::after {
@@ -127,8 +129,8 @@
     border-radius: 3px;
     background-color: rgb(255, 255, 255);
     transition: all 0.5 ease-in-out;
-  }
-  .burger-bar::before,
+  } */
+  /* .burger-bar::before,
   .burger-bar::after {
     content: "";
     position: absolute;
@@ -139,7 +141,7 @@
   }
   .burger-bar::after {
     transform: translateY(12px);
-  }
+  } */
 
   .show-nav .burger-bar {
     width: 0;

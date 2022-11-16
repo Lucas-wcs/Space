@@ -2,8 +2,8 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
-const planetRoutes = require('./planetRoutes');
-const quizRoutes = require('./quizRoutes');
+const planetRoutes = require("./planetRoutes");
+const quizRoutes = require("./quizRoutes");
 
 const app = express();
 
