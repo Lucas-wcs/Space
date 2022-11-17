@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Questionnaire from "../components/quizz/Questionnaire";
 import Astro from "../components/quizz/Astro";
-import "../css/quizz/Quiz.css";
 import Certificat from "../components/quizz/Certificat";
+import "../css/quizz/Quiz.css";
 
 function Quiz() {
   const [newQuest, setNewQuest] = useState(0);
   const [resptrue, setResptrue] = useState(0);
   const [api, setApi] = useState([]);
+  const [somme, setSomme] = useState(0);
 
   useEffect(() => {
     axios
@@ -31,7 +32,7 @@ function Quiz() {
     <div>
       {api.length > 3 && (
         <div>
-          {newQuest < 2 ? (
+          {newQuest < 10 ? (
             <div className="Quiz">
               <Questionnaire
                 question={api[newQuest].question}
@@ -39,16 +40,20 @@ function Quiz() {
                 solution={api[newQuest].solution}
                 trueFalse={(verif) => trueFalse(verif)}
                 parentProp={() => parent()}
+                somme={somme}
+                setSomme={setSomme}
               />
 
               <Astro
                 comfalse={api[newQuest]["commentaire-false"]}
                 comtrue={api[newQuest]["commentaire-true"]}
                 resptrue={resptrue}
+                somme={somme}
+                setSomme={setSomme}
               />
             </div>
           ) : (
-            <Certificat />
+            <Certificat somme={somme} setSomme={setSomme} />
           )}
         </div>
       )}

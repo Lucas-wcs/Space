@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400");
 
+.somme {
+  color: white;
+  font-size: 1rem;
+}
+
 .questionnaire {
   width: 80%;
   height: 80%;
