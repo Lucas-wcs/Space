@@ -30,9 +30,9 @@ function Quiz() {
 
   return (
     <div>
-      {api.length > 3 && (
-        <div>
-          {newQuest < 10 ? (
+      {api.length > 5 && (
+        <div className="leTout">
+          {newQuest < 5 ? (
             <div className="Quiz">
               <Questionnaire
                 question={api[newQuest].question}
