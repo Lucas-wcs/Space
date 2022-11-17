@@ -32,7 +32,7 @@ function Quiz() {
     <div>
       {api.length > 0 && (
         <div className="leTout">
-          {newQuest < 2 ? (
+          {newQuest < 10 ? (
             <div className="Quiz">
               <Questionnaire
                 question={api[newQuest].question}
