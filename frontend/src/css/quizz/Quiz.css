@@ -8,21 +8,11 @@
 
 @media screen and (max-width: 600px) {
   .Quiz {
-    /* position: relative;
-    left: -5%;
-    padding: 0%;
+    position: relative;
+    bottom: 90px;
     display: flex;
     flex-direction: column;
-    align-items: center; */
-
-    width: 100%;
+    align-items: center;
     padding: 20px;
-    display: flex;
   }
-
-  @media screen and (max-width: 600px) {
-  }
-}
-
-@media screen and (max-width: 600px) {
 }

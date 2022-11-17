@@ -40,12 +40,25 @@
 }
 
 @media screen and (max-width: 600px) {
-  /* .bulles {
-    transform: scaleX(-1);
-    width: 90%;
-    right: 35%;
-    top: 7%;
-  } */
+  .interrogation {
+    display: block;
+  }
+
+  .bulles {
+    position: absolute;
+    /* transform: scaleX(-1); */
+    /* scale: .7; */
+    width: 190px;
+    right: 35px;
+    /* 
+    top: 7%; */
+    bottom: 60px;
+    left: 140px;
+  }
+
+  .personnage {
+    scale: 0.8;
+  }
 
   /* .truefalse {
     width: 60%;
