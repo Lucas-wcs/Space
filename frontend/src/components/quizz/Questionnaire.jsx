@@ -8,10 +8,11 @@ function Questionnaire({
   solution,
   parentProp,
   trueFalse,
+  somme,
+  setSomme,
 }) {
   const [quesSuiv, setQueSuiv] = React.useState(false);
   const [respColors, setRespColor] = React.useState(false);
-  const [somme, setSomme] = React.useState(0);
 
   function suite() {
     parentProp();
@@ -22,7 +23,6 @@ function Questionnaire({
 
   function compareResponse(voila) {
     setRespColor(true);
-
     if (voila === solution) {
       setSomme(somme + 1);
       trueFalse(2);
@@ -88,7 +88,6 @@ function Questionnaire({
       >
         {responses[2]}
       </button>
-      <p className="somme">{somme}</p>
       {quesSuiv && (
         <button onClick={() => suite()} type="button" className="suivant">
           Suivant
@@ -104,5 +103,7 @@ Questionnaire.propTypes = {
   solution: PropTypes.string.isRequired,
   question: PropTypes.string.isRequired,
   trueFalse: PropTypes.func.isRequired,
+  somme: PropTypes.number.isRequired,
+  setSomme: PropTypes.func.isRequired,
   responses: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
