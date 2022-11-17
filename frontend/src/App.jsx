@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "@components/Header";
-import Home from "@pages/Home";
-import Planets from "@pages/Planets";
-import Savoir from "@pages/Savoir";
-import Quiz from "@pages/Quiz";
-import Footer from "@components/Footer";
-import GeneralStars from "@components/GeneralStars";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Planets from "./pages/Planets";
+import Savoir from "./pages/Savoir";
+import Quiz from "./pages/Quiz";
+import GeneralStars from "./components/GeneralStars";
+import Footer from "./components/Footer";
 import "./css/stars/GeneralStars.css";
 
 function App() {
