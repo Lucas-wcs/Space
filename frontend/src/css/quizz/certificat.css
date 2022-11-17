@@ -47,10 +47,13 @@
 }
 
 .score {
-  background-color: blueviolet;
   margin-bottom: 30px;
   height: 15%;
   width: 30%;
+  font-size: 3.5rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bolder;
+  color: rgb(54, 144, 54);
 }
 
 @media screen and (max-width: 600px) {
