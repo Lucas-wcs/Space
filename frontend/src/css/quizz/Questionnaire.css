@@ -57,7 +57,7 @@
   border: solid rgb(0, 191, 0) 4px;
   color: #ffff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .cubeQestion {
     position: relative;
     width: 110%;
