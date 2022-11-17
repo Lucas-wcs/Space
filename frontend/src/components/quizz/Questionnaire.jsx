@@ -88,7 +88,7 @@ function Questionnaire({
       >
         {responses[2]}
       </button>
-      {somme}
+      <p className="somme">{somme}</p>
       {quesSuiv && (
         <button onClick={() => suite()} type="button" className="suivant">
           Suivant
