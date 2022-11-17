@@ -1,47 +1,18 @@
 .Quiz {
   height: calc(100vh - 122px);
-  width: 100%;
-  padding: 20px;
-  display: flex;
-}
-
-.certificat {
-  padding: 20px;
-  width: 70%;
-  height: 60vh;
+  width: 90vw;
   margin: auto auto;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.666);
-  box-shadow: 0 0 10px white;
-
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.title-certificat {
-  font-weight: 300;
-  font-size: 3.5rem;
-}
-
-.p-certificat {
-  font-weight: 200;
+  gap: 20px;
 }
 
 @media screen and (max-width: 600px) {
-  /* .Quiz {
+  .Quiz {
     position: relative;
-    left: -5%;
-    padding: 0%;
+    bottom: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  } */
-
-  /* .questionnaire {
-    width: 80%;
-    height: 80%;
-    margin-top: 90px;
-  } */
+    padding: 20px;
+  }
 }

@@ -1,0 +1,23 @@
+.certificat {
+    padding: 20px;
+    width: 70%;
+    height: 60vh;
+    margin: auto auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.666);
+    box-shadow: 0 0 10px white;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .title-certificat {
+    font-weight: 300;
+    font-size: 3.5rem;
+  }
+  
+  .p-certificat {
+    font-weight: 200;
+  }

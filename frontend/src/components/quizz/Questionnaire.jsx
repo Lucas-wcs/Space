@@ -8,27 +8,27 @@ function Questionnaire({
   solution,
   parentProp,
   trueFalse,
+  somme,
+  setSomme,
 }) {
   const [quesSuiv, setQueSuiv] = React.useState(false);
   const [respColors, setRespColor] = React.useState(false);
-  const [somme, setSomme] = React.useState(0);
 
   function suite() {
     parentProp();
     setQueSuiv(!quesSuiv);
     setRespColor(!respColors);
-    trueFalse(undefined);
+    trueFalse(0);
   }
 
   function compareResponse(voila) {
     setRespColor(true);
-
     if (voila === solution) {
       setSomme(somme + 1);
-      trueFalse(true);
+      trueFalse(2);
       console.warn("bravo");
     } else {
-      trueFalse(false);
+      trueFalse(1);
       console.warn("dommage");
     }
     setQueSuiv(true);
@@ -88,7 +88,6 @@ function Questionnaire({
       >
         {responses[2]}
       </button>
-      {somme}
       {quesSuiv && (
         <button onClick={() => suite()} type="button" className="suivant">
           Suivant
@@ -104,7 +103,7 @@ Questionnaire.propTypes = {
   solution: PropTypes.string.isRequired,
   question: PropTypes.string.isRequired,
   trueFalse: PropTypes.func.isRequired,
-  responses: PropTypes.arrayOf(
-    PropTypes.shape([PropTypes.string, PropTypes.string, PropTypes.string])
-  ).isRequired,
+  somme: PropTypes.number.isRequired,
+  setSomme: PropTypes.func.isRequired,
+  responses: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
