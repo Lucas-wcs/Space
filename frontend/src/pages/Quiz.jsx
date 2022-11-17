@@ -29,25 +29,27 @@ function Quiz() {
 
   return (
     <div>
-      {api.length > 0 && (
-        <div className="Quiz">
-          {newQuest < 10 ? (
-            <Questionnaire
-              question={api[newQuest].question}
-              responses={api[newQuest].reponse}
-              solution={api[newQuest].solution}
-              trueFalse={(verif) => trueFalse(verif)}
-              parentProp={() => parent()}
-            />
+      {api.length > 3 && (
+        <div>
+          {newQuest < 2 ? (
+            <div className="Quiz">
+              <Questionnaire
+                question={api[newQuest].question}
+                responses={api[newQuest].reponse}
+                solution={api[newQuest].solution}
+                trueFalse={(verif) => trueFalse(verif)}
+                parentProp={() => parent()}
+              />
+
+              <Astro
+                comfalse={api[newQuest]["commentaire-false"]}
+                comtrue={api[newQuest]["commentaire-true"]}
+                resptrue={resptrue}
+              />
+            </div>
           ) : (
             <Certificat />
           )}
-
-          <Astro
-            comfalse={api[newQuest]["commentaire-false"]}
-            comtrue={api[newQuest]["commentaire-true"]}
-            resptrue={resptrue}
-          />
         </div>
       )}
     </div>

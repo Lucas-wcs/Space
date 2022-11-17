@@ -8,7 +8,7 @@ function Astro({ comfalse, comtrue, resptrue }) {
   return (
     <div className="interrogation">
       <div className="bulle-container">
-        <img className="bulles" src={bulle} alt="nous" />
+        {resptrue !== 0 && <img className="bulles" src={bulle} alt="nous" />}
         {resptrue === 2 ? (
           <div className="truefalse">
             <p className="true rep-paragraph">{comtrue}</p>
