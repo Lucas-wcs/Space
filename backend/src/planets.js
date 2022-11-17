@@ -26,7 +26,7 @@ const planets = [
           title:
             "Sais-tu que Mercure est une des planètes les plus dangereuses ?",
           answer:
-            "Sur Mercure est l'un des endroits les plus chauds du système solaire - plus de quatre fois plus chaud que l'eau bouillante.",
+            "Mercure est l'un des endroits les plus chauds du système solaire - plus de quatre fois plus chaud que l'eau bouillante.",
         },
         {
           title: "Sais-tu à quel point Mercure est invivable ?",
@@ -36,7 +36,7 @@ const planets = [
         {
           title: "Sais-tu pourquoi Mercure s'appelle Mercure ?",
           answer:
-            "Mercure a été nommé d'après un dieu romain du Commerce et des Voleurs, messager des dieux, fils de Jupiter.",
+            "Mercure a été nommé d'après un dieu romain du Commerce et des Voleurs, messager des dieux, fils de Jupiter. Dans la mythologie grèque, ce dieu est connu sous le nom d'Hermès",
         },
       ],
     },
@@ -74,10 +74,6 @@ const planets = [
         "Celle que nous surnommons l'« étoile du Berger » n'est pas une étoile, mais bien une planète. Il s'agit de Vénus. Deuxième planète du système solaire par ordre d'éloignement au Soleil, elle doit son nom à la déesse romaine de l'Amour. Sur Vénus, une journée dure plus longtemps qu'une année, le soleil se lève à l'ouest et se couche à l'est, et il y fait toujours chaud, très chaud !",
       ],
       "long-description": [
-        {
-          title: "Sais-tu quelle est la température moyenne de Vénus ?",
-          answer: "Quand il fait 30° C sur Terre, il fait 240° C sur Vénus !",
-        },
         {
           title: "Sais-tu quelle est la température moyenne de Vénus ?",
           answer: "Quand il fait 30° C sur Terre, il fait 240° C sur Vénus !",
@@ -131,11 +127,11 @@ const planets = [
           title:
             "Sais-tu que l'air sur Terre n'a pas toujours été respirable ?",
           answer:
-            "A l'origine, l'atmosphère était composée de gaz hautement toxiques, dont le dioxyde de carbone, provenant de l'activité volcanique de la planète. ",
+            "A l'origine, l'atmosphère était composée de gaz hautement toxiques, dont le dioxyde de carbone, provenant de l'activité volcanique de la planète.",
         },
         {
           title:
-            "Sais-tu que la Terre est continuellement bombardée de cailloux?",
+            "Sais-tu que la Terre est continuellement bombardée de cailloux ?",
           answer:
             "Chaque jour, jusqu'à 10 millions de kilogrammes de météores sont brûlés par l'atmosphère terrestre.",
         },
@@ -182,10 +178,12 @@ const planets = [
             title:
               "Sais-tu que la Lune est régulièrement attaquée par des météorites ?",
             answer:
-              "Des météorites tombent sur la Lune et creusent son sol : cela forme des cratères. Il y a plus de 10 000 météorites qui frappent le sol lunaire quotidiennement. Les cratères peuvent mesurer plusieurs dizaines de kilomètres de diamètre.",
+              "Des météorites tombent sur la Lune et creusent son sol : cela forme des cratères. Il y a plus de 10 000 météorites qui frappent le sol lunaire quotidiennement. Les cratères peuvent mesurer plusieurs dizaines de kilomètres de diamètre. Cela pose une question intéressante : T'es-tu déjà demandé pourquoi nous ne voyons pas de météorites tomber sur notre sol ?",
           },
           {
             title: "Sais-tu que les températures sur la Lune sont extrêmes ?",
+            answer:
+              "Sur la Lune, les températures oscillent entre -248 °C et 123 °C.",
           },
         ],
       },
@@ -228,7 +226,8 @@ const planets = [
             "Mars n'est rouge que de loin, à cause de la rouille des minéraux de fer présents dans les roches et le sol.",
         },
         {
-          title: "Sais-tu que le vrai grand canyon est sur Mars ?",
+          title:
+            "Sais-tu que notre Grand Canyon est ridicule comparé à celui qui est sur Mars ?",
           answer:
             "Mars abrite l'un des plus grands canyons du système solaire et le plus haut volcan, Olympus Mons, qui est près de trois fois plus haut que le mont Everest.",
         },
@@ -305,7 +304,7 @@ const planets = [
         {
           title: "Sais-tu que la lune Déimos n'est pas ronde ?",
           answer:
-            "Déimos possède une forme non sphérique, n'étant pas suffisamment massif pour prendre une forme plus régulière.",
+            "Déimos possède une forme non sphérique, n'étant pas suffisamment massive pour prendre une forme plus régulière.",
         },
       ],
     },
@@ -350,12 +349,12 @@ const planets = [
         {
           title: "Sais-tu ce qu'est la grande tâche rouge de Jupiter ?",
           answer:
-            "La grande Tache Rouge de Jupiter, un ouragan qui fait rage depuis des siècles, fait environ trois fois la taille de la Terre.",
+            "La grande Tâche Rouge de Jupiter, un ouragan qui fait rage depuis des siècles, fait environ trois fois la taille de la Terre.",
         },
         {
           title: "Sais-tu que les journées sont courtes sur Jupiter ?",
           answer:
-            "Jupiter est peut-être la plus grosse planète du système solaire, mais elle a le jour le plus court—seulement 10 heures—en raison de sa rotation rapide.",
+            "Jupiter est peut-être la plus grosse planète du Système Solaire, mais elle a le jour le plus court (seulement 10 heures) en raison de sa rotation rapide.",
         },
       ],
     },
@@ -385,7 +384,8 @@ const planets = [
       "short-description": ["Elle est l'une des méga-lunes de Jupiter"],
       "long-description": [
         {
-          title: "Sais-tu que le",
+          title:
+            "Sais-tu que l'activité volcanique de la Lune Io est chaotique ?",
           answer:
             "Les volcans de Io, le corps le plus volcanique du système solaire, crachent des nuages de soufre jaune dans des colonnes faisant plus de 500 kilomètres de haut.",
         },
@@ -421,7 +421,7 @@ const planets = [
         {
           title: "Sais-tu que cette lune abrite peut-être un océan ?",
           answer:
-            "Les scientifiques pensent qu'Europe pourrait, à l'intérieur de cet océan, abriter des formes de vie.",
+            "Il y a bien une idée faisant consensus dans le domaine de la recherche spatiale : sans que cela n'ai pu être prouvé, la Lune Europe est hautement susceptible d'abriter un océan. Les scientifiques pensent également qu'Europe pourrait, à l'intérieur de cet océan, abriter des formes de vie.",
         },
       ],
     },
