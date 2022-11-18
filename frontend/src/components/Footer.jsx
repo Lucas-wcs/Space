@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -13,26 +13,32 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="social-container">
-          <Link to="https://facebook.com/">
+          <a href="https://facebook.com/">
             <FontAwesomeIcon className="fb icon" icon={faFacebookSquare} />
-          </Link>
-          <FontAwesomeIcon className="twitter icon" icon={faTwitter} />
-          <FontAwesomeIcon className="yt icon" icon={faYoutube} />
-          <FontAwesomeIcon className="email icon" icon={faEnvelope} />
+          </a>
+          <a href="https://facebook.com/">
+            <FontAwesomeIcon className="twitter icon" icon={faTwitter} />
+          </a>
+          <a href="https://facebook.com/">
+            <FontAwesomeIcon className="yt icon" icon={faYoutube} />
+          </a>
+          <a href="https://facebook.com/">
+            <FontAwesomeIcon className="email icon" icon={faEnvelope} />
+          </a>
         </div>
         <div className="info-container">
-          <ul className="list1-container">
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-          </ul>
-          <ul className="list2-container">
-            <li>Lorem ipsum</li>
+          <ul className="lorem1 list-container">
+            <h2>Contact</h2>
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>
-          <ul className="list3-container">
+          <ul className="lorem2 list-container">
+            <h2>Links</h2>
             <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+          </ul>
+          <ul className="loem3 list-container">
+            <h2>Planetarium</h2>
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>

@@ -1,6 +1,6 @@
 .Home {
   position: relative;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 122px);
   width: 100vw;
   color: white;
   padding-top: 80px;
@@ -152,7 +152,6 @@
   bottom: 0px;
   height: 200px;
   width: 200px;
-  z-index: 1000;
 }
 
 .info {

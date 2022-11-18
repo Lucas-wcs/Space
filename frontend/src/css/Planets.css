@@ -1,9 +1,108 @@
 .Planets {
-  height: calc(100vh - 120px);
-  width: 100%;
   color: white;
+  border: solid 1px pink;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.intro {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid 1px azure;
+}
+
+.intro .bubble {
+  background-image: "./src/assets/images/astronauts/Bulle.png";
+  font-size: 20px;
+  font-family: "Fredoka";
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  /* background-color: rgba(47, 79, 79, 0.5); */
+}
+
+.filter {
+  position: fixed;
+  top: 40%;
+  width: 15em;
+  border: 1px white dotted;
+  font-family: "Fredoka";
+  font-size: 20px;
+}
+
+.filter div {
+  margin: 10px;
+  border: 1px red solid;
+}
+
+.filter div input {
+  margin-right: 20px;
+}
+
+.containerPlanets {
+  border: 3px dotted yellow;
+  margin-left: 20em;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.containerCards {
+  border: 2px solid white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerCards.large {
+  grid-column: span 2;
+}
+
+.planetImg {
+  filter: drop-shadow(0px 0px 28px #ffffff);
+  text-align: center;
+  font-family: "Fredoka";
+  font-size: 36px;
+  border: 1px red solid;
+  /* scale: 0.7; */
+  background: none;
+}
+
+.planetDescription {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #eec643;
+  padding: 20px;
+}
+
+.planetDescription,
+li {
+  margin-top: 10px;
+  list-style: inside;
+  color: brown;
+}
+
+planetDescription,
+p {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* ----------------------------MEDIA QUERIES---------------------------- */
+
+@media screen and(max-witdh) {
+  * {
+    display: none;
+  }
 }

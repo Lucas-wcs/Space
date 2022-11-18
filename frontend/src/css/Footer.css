@@ -1,9 +1,8 @@
 .footer {
-  z-index: -1;
   height: 70px;
-  width: 100%;
+  width: 100vw;
   background-color: gray;
-  border-radius: 50% 50% 0 0;
+  border-radius: 90% 90% 0 0;
   color: rgb(255, 255, 255);
 }
 .footer-content {
@@ -12,24 +11,41 @@
   justify-content: center;
 }
 
+.footer-content .info-container {
+  padding-top: 10px;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.list-container {
+  font-size: 0.7rem;
+}
+
 .footer-content li {
   color: white;
   margin-bottom: 0;
 }
 
-.footer-content .info-container {
+.footer-content .social-container {
+  position: absolute;
+  top: -35px;
+  left: calc(50% - 120px);
   display: flex;
-  width: 60%;
-  justify-content: space-around;
+  gap: 30px;
 }
 
 .footer-content .icon {
+  position: relative;
   height: 30px;
   width: 30px;
 }
 
 .fb {
   color: rgb(156, 156, 255);
+  top: 2px;
+  rotate: -1.5deg;
 }
 .twitter {
   color: rgb(147, 147, 255);
@@ -39,18 +55,17 @@
 }
 .email {
   color: rgb(165, 165, 255);
+  top: 2px;
+  rotate: 1.5deg;
 }
 
-.footer-content .social-container {
-  position: absolute;
-  top: -35px;
-  left: calc(50% - 100px);
-  display: flex;
-  gap: 30px;
+.footer-content a {
+  scale: 1;
+  cursor: pointer;
+  transition: scale 100ms ease-in;
 }
-
-.footer-content .social-container:hover {
-  scale: 2;
+.footer-content a:hover {
+  scale: 1.2;
 }
 
 @media screen and (max-width: 600px) {

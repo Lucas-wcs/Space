@@ -1,29 +1,70 @@
 .interrogation {
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin-left: -100px;
+  align-items: center;
+  justify-content: center;
 }
 
-.bulles {
-  width: 50%;
+.bulle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: -100px;
 }
 
-.personnage {
-  width: 80%;
+.bulles {
+  width: 87%;
 }
 
-@media screen and (max-width: 767px) {
-  .personnage {
-    width: 45%;
+.truefalse {
+  position: absolute;
+  width: 60%;
+  height: 50%;
+  top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rep-paragraph {
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.personnage {
+  width: 110%;
+  margin-bottom: -200px;
+}
+
+@media screen and (max-width: 600px) {
+  .interrogation {
+    display: block;
   }
 
   .bulles {
-    width: 45%;
-    height: 50%;
+    position: absolute;
+    /* transform: scaleX(-1); */
+    /* scale: .7; */
+    width: 190px;
+    right: 35px;
+    /* 
+    top: 7%; */
+    bottom: 60px;
+    left: 140px;
   }
 
-  .interrogation {
+  .personnage {
+    scale: 0.8;
   }
+
+  /* .truefalse {
+    width: 60%;
+    height: 20%;
+    top: 35%;
+    font-size: 1rem;
+    left: -40%;
+  } */
 }

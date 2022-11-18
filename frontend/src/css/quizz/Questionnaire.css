@@ -1,47 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400");
 
-.cubeQestion {
+.somme {
+  color: white;
+  font-size: 1rem;
+}
+
+.questionnaire {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
   width: 80%;
   height: 80%;
-  gap: 5px;
-  color: #ffff;
-  font-family: "Fredoka", sans-serif;
+  margin-top: 90px;
 }
 
 .question_titre {
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .resp1,
 .resp2,
 .resp3 {
   width: 100%;
-  height: 20%;
+  height: 25%;
   font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
   background-color: #eef0f2;
   border: solid#EEC643 3px;
   border-radius: 7px;
+  cursor: pointer;
 }
+
 .suivant {
-  width: 50%;
-  height: 15%;
-  border-radius: 10px;
-  background-color: rgb(104, 162, 18);
+  cursor: pointer;
   font-family: "Fredoka", sans-serif;
-  color: #eef0f2;
+  font-size: 1.5rem;
   margin-top: 10px;
+  border-radius: 10px;
+  height: 20%;
+  width: 30%;
+  color: #eef0f2;
+  background-color: rgb(0, 191, 0);
+}
+
+.rouge {
+  width: 100%;
+  height: 25%;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgba(250, 0, 0, 0.2);
+  border: solid rgb(250, 0, 0) 4px;
+  color: #ffff;
 }
 
 .vert {
-  background-color: green;
+  width: 100%;
+  height: 25%;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgba(0, 191, 0, 0.2);
+  border: solid rgb(0, 191, 0) 4px;
+  color: #ffff;
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .cubeQestion {
+    position: relative;
+    width: 110%;
     margin-bottom: 0;
+  }
+
+  .question_titre {
+    font-size: 1.5rem;
+  }
+
+  .suivant {
+    position: absolute;
+    bottom: -12%;
   }
 }

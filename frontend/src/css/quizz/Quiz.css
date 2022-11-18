@@ -1,15 +1,29 @@
-.Quiz {
-  height: calc(100vh - 120px);
-  width: 100%;
-  padding-left: 5%;
+.leTout {
+  height: calc(100vh - 122px);
+  width: 90vw;
+  margin: auto auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 20px;
 }
 
-@media screen and (max-width: 767px) {
+.Quiz {
+  height: calc(100vh - 122px);
+  width: 90vw;
+  margin: auto auto;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
   .Quiz {
+    position: relative;
+    left: -5%;
+    padding: 0%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    display: flex;
   }
 }
