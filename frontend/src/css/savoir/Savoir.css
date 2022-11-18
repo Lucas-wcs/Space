@@ -6,6 +6,10 @@
   --dark: rgba(189, 142, 41, 0.157);
 }
 
+.astronaut-section{
+  height: calc(100vh - 180px);
+}
+
 /* BUBBLE PART */
 
 .knowledge-bubble {
@@ -78,8 +82,8 @@
   50% {
     box-shadow: inset 0 0 50px #fff, inset 20px 0 60px var(--orange),
       inset -20px 0 60px var(--orange), inset 20px 0 300px whitesmoke,
-      inset -20px 0 300px var(--orange), 0 0 100px #fff, -10px 0 60px rgba(255, 255, 255, 0.995),
-      10px 0 60px white;
+      inset -20px 0 300px var(--orange), 0 0 100px #fff,
+      -10px 0 60px rgba(255, 255, 255, 0.995), 10px 0 60px white;
   }
   100% {
     box-shadow: inset 0 0 50px #fff, inset 20px 0 60px var(--orange),
