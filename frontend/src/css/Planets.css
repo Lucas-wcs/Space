@@ -101,8 +101,8 @@ p {
 
 /* ----------------------------MEDIA QUERIES---------------------------- */
 
-@media screen and(max-witdh) {
-  * {
+@media screen and (max-width: 600px) {
+  .Planets {
     display: none;
   }
 }

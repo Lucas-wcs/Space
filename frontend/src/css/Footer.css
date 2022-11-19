@@ -3,6 +3,7 @@
   width: 100vw;
   background-color: gray;
   border-radius: 90% 90% 0 0;
+  box-shadow: 2px 0 2px gray;
   color: rgb(255, 255, 255);
 }
 .footer-content {
@@ -12,7 +13,7 @@
 }
 
 .footer-content .info-container {
-  padding-top: 10px;
+  padding-top: 8px;
   display: flex;
   width: 60%;
   justify-content: space-around;
@@ -20,12 +21,11 @@
 }
 
 .list-container {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .footer-content li {
   color: white;
-  margin-bottom: 0;
 }
 
 .footer-content .social-container {

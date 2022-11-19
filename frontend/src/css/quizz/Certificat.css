@@ -21,3 +21,80 @@
 .p-certificat {
   font-weight: 200;
 }
+*/ .certificat {
+  position: relative;
+
+  display: flex;
+  padding: 20px;
+  width: 70%;
+  height: 60vh;
+  margin: auto auto;
+  border-radius: 10px;
+  background-color: rgba(238, 240, 242, 0.666);
+  border: solid#EEC643 3px;
+  box-shadow: 0 0 25px rgb(238, 198, 67);
+}
+.champion {
+  position: absolute;
+  height: 105%;
+  left: -5%;
+  top: -5%;
+}
+.cadre-point {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7%;
+  top: 10%;
+  right: 5%;
+  height: 100%;
+  width: 50%;
+}
+
+.title-certificat {
+  font-family: "Fredoka", sans-serif;
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+.p-certificat,
+.voyage {
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.score {
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  color: green;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  height: 15%;
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .certificat {
+    width: 90%;
+    height: 85%;
+    margin: auto auto;
+  }
+  .champion {
+    height: 85%;
+    left: -20%;
+    top: 10%;
+  }
+  .title-certificat {
+    position: relative;
+    top: -30px;
+    left: -80px;
+    font-size: 3rem;
+  }
+  .voyage {
+    position: relative;
+    left: -37%;
+    bottom: -5%;
+    width: 400px;
+  }
+}
