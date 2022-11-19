@@ -37,7 +37,7 @@ function Footer() {
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>
-          <ul className="loem3 list-container">
+          <ul className="lorem3 list-container">
             <h2>Planetarium</h2>
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
