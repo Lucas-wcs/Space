@@ -143,7 +143,7 @@ const planets = [
     naine: false,
     tellurique: true,
     aroundPlanet: null,
-    discoveredBy: "",
+    discoveredBy: "It is our home!",
     discoveryDate: "",
   },
   {
