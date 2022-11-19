@@ -56,19 +56,20 @@ a {
 }
 
 .home {
-  transform: translateY(5px);
-}
-.planets {
-  transform: translateY(4px);
+  transform: translateY(30px);
   rotate: -1deg;
 }
+.planets {
+  transform: translateY(26px);
+  rotate: -3deg;
+}
 .savoir {
-  transform: translateY(0px);
-  rotate: -2deg;
+  transform: translateY(16px);
+  rotate: -5deg;
 }
 .quiz {
-  transform: translateY(-6px);
-  rotate: -6deg;
+  transform: translateY(2px);
+  rotate: -7deg;
 }
 
 .navbar-burger {
