@@ -8,6 +8,63 @@
   /* background: linear-gradient(#111425, #06214c); */
 }
 
+.background svg {
+  position: absolute;
+  left: -30%;
+  top: 60%;
+  height: 50px;
+  width: 50px;
+  animation: ufo 20s infinite 5s ease-in-out;
+  z-index: 0;
+}
+@keyframes ufo {
+  0% {
+    top: 60%;
+    left: -30%;
+  }
+
+  15% {
+    top: 30%;
+    left: 20%;
+  }
+
+  30% {
+    top: 100%;
+    left: 80%;
+  }
+  35% {
+    top: 70%;
+    left: -30%;
+  }
+  36% {
+    top: 150%;
+    left: -30%;
+  }
+  37% {
+    top: 150%;
+    left: 150%;
+  }
+  38% {
+    top: 30%;
+    left: 150%;
+  }
+
+  60% {
+    top: 70%;
+    left: 50%;
+  }
+
+  80% {
+    top: 40%;
+    left: -50%;
+  }
+
+  85% {
+    top: 20%;
+    left: -150%;
+  }
+}
+
 .stars {
   background-color: #fff;
   border-radius: 50%;
