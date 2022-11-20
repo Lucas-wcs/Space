@@ -14,7 +14,7 @@
   top: 60%;
   height: 50px;
   width: 50px;
-  animation: ufo 20s infinite 5s ease-in-out;
+  animation: ufo 30s infinite 1s ease-in-out;
   z-index: 0;
 }
 @keyframes ufo {
@@ -27,39 +27,63 @@
     top: 30%;
     left: 20%;
   }
+  
+  20% {
+    top: 30%;
+    left: 20%;
+  }
 
   30% {
     top: 100%;
     left: 80%;
   }
   35% {
+    top: 100%;
+    left: 80%;
+  }
+  50% {
     top: 70%;
     left: -30%;
   }
-  36% {
+  51% {
     top: 150%;
     left: -30%;
   }
-  37% {
+  52% {
     top: 150%;
     left: 150%;
   }
-  38% {
+  53% {
     top: 30%;
     left: 150%;
   }
 
-  60% {
-    top: 70%;
+  70% {
+    top: 60%;
+    left: 50%;
+  }
+  75% {
+    top: 60%;
     left: 50%;
   }
 
   80% {
     top: 40%;
-    left: -50%;
+    left: 80%;
   }
-
   85% {
+    top: 40%;
+    left: 80%;
+  }
+  90% {
+    top: 60%;
+    left: -20%;
+  }
+  95% {
+    top: 60%;
+    left: 20%;
+  }
+  100% {
     top: 20%;
     left: -150%;
   }
