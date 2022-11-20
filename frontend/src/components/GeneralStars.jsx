@@ -9,7 +9,7 @@ function GeneralStars() {
 
   useEffect(() => {
     const tabTmp = [];
-    for (let i = 0; i < 800; i += 1) {
+    for (let i = 0; i < 400; i += 1) {
       tabTmp.push({
         id: i,
         left: Math.floor(Math.random() * width),
@@ -28,7 +28,6 @@ function GeneralStars() {
           width="70"
           height="71"
           viewBox="0 0 70 71"
-
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
