@@ -6,6 +6,10 @@
   --dark: rgba(189, 142, 41, 0.157);
 }
 
+.astronaut-section {
+  height: calc(100vh - 180px);
+}
+
 /* BUBBLE PART */
 
 .knowledge-bubble {

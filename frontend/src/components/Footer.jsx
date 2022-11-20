@@ -16,23 +16,29 @@ function Footer() {
           <a href="https://facebook.com/">
             <FontAwesomeIcon className="fb icon" icon={faFacebookSquare} />
           </a>
-          <FontAwesomeIcon className="twitter icon" icon={faTwitter} />
-          <FontAwesomeIcon className="yt icon" icon={faYoutube} />
-          <FontAwesomeIcon className="email icon" icon={faEnvelope} />
+          <a href="https://facebook.com/">
+            <FontAwesomeIcon className="twitter icon" icon={faTwitter} />
+          </a>
+          <a href="https://facebook.com/">
+            <FontAwesomeIcon className="yt icon" icon={faYoutube} />
+          </a>
+          <a href="https://facebook.com/">
+            <FontAwesomeIcon className="email icon" icon={faEnvelope} />
+          </a>
         </div>
         <div className="info-container">
-          <ul className="list1-container">
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-          </ul>
-          <ul className="list2-container">
-            <li>Lorem ipsum</li>
+          <ul className="lorem1 list-container">
+            <h2>Contact</h2>
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>
-          <ul className="list3-container">
+          <ul className="lorem2 list-container">
+            <h2>Links</h2>
             <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+          </ul>
+          <ul className="lorem3 list-container">
+            <h2>Planetarium</h2>
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>

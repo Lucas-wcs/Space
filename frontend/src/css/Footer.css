@@ -1,59 +1,80 @@
 .footer {
+  position: fixed;
+  bottom: 0;
   height: 70px;
   width: 100vw;
-  background-image: url("../assets/images/moon_footer.png");
-  background-size: cover;
+  background-color: gray;
+  border-radius: 90% 90% 0 0;
+  box-shadow: 2px 0 2px gray;
   color: rgb(255, 255, 255);
 }
 .footer-content {
-  position: relative;
   display: flex;
   justify-content: center;
 }
 
-.footer-content li {
-  color: white;
-  margin-bottom: 0;
-}
-
 .footer-content .info-container {
+  padding-top: 8px;
   display: flex;
   width: 60%;
   justify-content: space-around;
+  text-align: center;
+  list-style: none;
+}
+
+.footer-content .info-container .list-container {
+  font-size: 0.6rem;
+}
+
+.footer-content .info-container .list-container li {
+  color: white;
+  list-style: none;
+}
+
+.footer-content .social-container {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-content .icon {
-  height: 30px;
-  width: 30px;
+  position: relative;
+  padding: 4px;
+  height: 15px;
+  width: 15px;
 }
 
 .fb {
-  color: rgb(156, 156, 255);
+  color: rgb(29, 161, 242);
+  top: 2px;
+  rotate: -1.5deg;
 }
 .twitter {
-  color: rgb(147, 147, 255);
+  color: rgb(29, 161, 242);
 }
 .yt {
   color: red;
 }
 .email {
-  color: rgb(165, 165, 255);
-}
-
-.footer-content .social-container {
-  position: absolute;
-  top: -35px;
-  left: calc(50% - 100px);
-  display: flex;
-  gap: 30px;
+  color: rgb(140, 140, 255);
+  top: 2px;
+  rotate: 1.5deg;
 }
 
 .footer-content a {
   scale: 1;
   cursor: pointer;
+  transition: scale 100ms ease-in;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
 }
 .footer-content a:hover {
-  scale: 2;
+  scale: 1.2;
 }
 
 @media screen and (max-width: 600px) {
@@ -66,12 +87,11 @@
   }
 
   .footer-content .social-container {
-    top: -35px;
-    left: calc(50% - 80px);
+    bottom: 60px;
+    left: 10px;
     gap: 10px;
   }
 
   .footer-content .icon {
-    scale: 0.5;
   }
 }

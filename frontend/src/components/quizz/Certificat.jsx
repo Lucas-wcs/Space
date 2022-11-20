@@ -11,7 +11,11 @@ function Certificat({ somme }) {
       <div className="cadre-point">
         <h1 className="title-certificat">BRAVO !</h1>
         <p className="p-certificat"> tu as obtenu un score de:</p>
-        <div className="score">{somme}/10</div>
+
+        <div className="score">
+          <p>{somme}/5</p>
+        </div>
+
         <p className="voyage">A bientot pour un nouveau voyage!</p>
       </div>
     </div>

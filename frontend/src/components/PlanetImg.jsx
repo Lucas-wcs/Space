@@ -1,18 +1,23 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-function PlanetImg({ name, src }) {
+function PlanetImg({ name, src, handlePlanets }) {
   return (
-    <div className="planetImg">
+    <button
+      type="button"
+      className="planetImg"
+      onClick={() => handlePlanets(name)}
+    >
       <h3>{name}</h3>
       <img src={`./src${src}`} alt={name} />
-    </div>
+    </button>
   );
 }
 
 PlanetImg.propTypes = {
   name: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
+  handlePlanets: PropTypes.func.isRequired,
 };
 
 export default PlanetImg;
