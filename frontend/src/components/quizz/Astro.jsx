@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-import bulle from "../../assets/images/Bulle.png";
 import "../../css/quizz/Astro.css";
+import bulle from "../../assets/images/bulle-rectangle.png";
 import image from "../../assets/images/astro-quizz.png";
 
 function Astro({ comfalse, comtrue, resptrue }) {
