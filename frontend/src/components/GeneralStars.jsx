@@ -28,6 +28,7 @@ function GeneralStars() {
           width="70"
           height="71"
           viewBox="0 0 70 71"
+
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -263,7 +264,6 @@ function GeneralStars() {
             fill="white"
           />
         </svg>
-
         {stars.map((star) => {
           return (
             <div
