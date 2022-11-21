@@ -8,6 +8,15 @@
   box-shadow: 2px 0 2px gray;
   color: rgb(255, 255, 255);
 }
+.footer svg.alien {
+  position: absolute;
+  right: 20px;
+  top: -165px;
+  rotate: 3deg;
+  width: 230px;
+  filter: drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.778));
+}
+
 .footer-content {
   display: flex;
   justify-content: center;
