@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import certificat from "../../assets/images/astronauts/certificat.png";
 import "../../css/quizz/Certificat.css";
 
-function Certificat({ somme }) {
+function Certificat({ somme, numQuestions }) {
   return (
     <div className="certificat">
       <img className="champion" src={certificat} alt="nous" />
@@ -13,7 +13,9 @@ function Certificat({ somme }) {
         <p className="p-certificat"> tu as obtenu un score de:</p>
 
         <div className="score">
-          <p>{somme}/5</p>
+          <p>
+            {somme}/{numQuestions}
+          </p>
         </div>
 
         <p className="voyage">A bientot pour un nouveau voyage!</p>
@@ -26,4 +28,5 @@ export default Certificat;
 
 Certificat.propTypes = {
   somme: PropTypes.number.isRequired,
+  numQuestions: PropTypes.string.isRequired,
 };
