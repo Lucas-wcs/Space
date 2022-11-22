@@ -146,6 +146,23 @@ a {
     cursor: pointer;
   }
 
+  .home {
+    transform: translateY(0px);
+    rotate: 0deg;
+  }
+  .planets {
+    transform: translateY(0px);
+    rotate: 0deg;
+  }
+  .savoir {
+    transform: translateY(0px);
+    rotate: 0deg;
+  }
+  .quiz {
+    transform: translateY(0px);
+    rotate: 0deg;
+  }
+
   /* .burger-bar,
   .burger-bar,
   .burger-bar::before,
