@@ -9,7 +9,7 @@ function GeneralStars() {
 
   useEffect(() => {
     const tabTmp = [];
-    for (let i = 0; i < 800; i += 1) {
+    for (let i = 0; i < 300; i += 1) {
       tabTmp.push({
         id: i,
         left: Math.floor(Math.random() * width),
