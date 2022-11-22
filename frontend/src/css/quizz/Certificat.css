@@ -1,45 +1,34 @@
-/* .certificat {
-    padding: 20px;
-    width: 70%;
-    height: 60vh;
-    margin: auto auto;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.666);
-    box-shadow: 0 0 10px white;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .title-certificat {
-    font-weight: 300;
-    font-size: 3.5rem;
-  }
-  
-  .p-certificat {
-    font-weight: 200;
-  } */
-
 .certificat {
   position: relative;
-
   display: flex;
   padding: 20px;
   width: 70%;
-  height: 60vh;
+  height: 70vh;
   margin: auto auto;
   border-radius: 10px;
   background-color: rgba(238, 240, 242, 0.666);
   border: solid#EEC643 3px;
   box-shadow: 0 0 25px rgb(238, 198, 67);
 }
+
+.title-certificat {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+
+.p-certificat {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
 .champion {
   position: absolute;
-  height: 105%;
-  left: -5%;
-  top: -5%;
+  height: 110%;
+  width: 65%;
+  margin-left: -10%;
+  margin-top: -5%;
 }
 .cadre-point {
   position: absolute;
@@ -62,7 +51,7 @@
 .voyage {
   text-align: center;
   font-family: "Fredoka", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: normal;
 }
 .score {
@@ -81,11 +70,12 @@
     height: 85%;
     margin: auto auto;
   }
+
   .champion {
     height: 85%;
-    left: -20%;
     top: 10%;
   }
+
   .title-certificat {
     position: relative;
     top: -30px;
@@ -95,7 +85,7 @@
   .voyage {
     position: relative;
     left: -37%;
-    bottom: -5%;
+    bottom: -15%;
     width: 400px;
   }
 }
