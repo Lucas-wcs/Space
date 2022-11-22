@@ -1,7 +1,7 @@
 const quiz = [
   {
     id: "question-1",
-    question: "Pourquoi appelle-t-on la Terre la planète bleue ? ",
+    question: "Pourquoi la Terre est-elle surnommée la planète bleue ? ",
     reponse: [
       "Parce qu'elle est composée à 72% d'eau",
       "Parce qu'elle est totalement bleue",
@@ -13,7 +13,7 @@ const quiz = [
   },
   {
     id: "question-2",
-    question: "Qu'elle est la plus grande planète du système solaire ?",
+    question: "Quelle est la plus grande planète du système solaire ?",
     reponse: ["La Terre", "Jupiter", "Saturne"],
     solution: "Jupiter",
     "commentaire-false":
@@ -38,7 +38,8 @@ const quiz = [
   },
   {
     id: "question-5",
-    question: "Quelles planètes ont des lunes ?",
+    question:
+      "Laquelle de ces planètes ne possède qu'un seul satellite naturel ?",
     reponse: ["Neptune", "La Terre", "Jupiter"],
     solution: "La Terre",
     "commentaire-false":
@@ -47,7 +48,7 @@ const quiz = [
   },
   {
     id: "question-6",
-    question: "Quelles planètes ne peut-on pas voir à l'oeil nu ?",
+    question: "Quelle planète ne peut-on pas voir à l'oeil nu ?",
     reponse: ["Vénus", "Mars", "Uranus"],
     solution: "Uranus",
     "commentaire-false": "Ce n'était pas facile...",
@@ -74,7 +75,7 @@ const quiz = [
   {
     id: "question-9",
     question:
-      "Combien de temps de voyage spatial depuis la Terre faut-il pour visiter Uranus ?",
+      "Combien de temps de voyage spatial depuis la Terre faut-il pour aller visiter Uranus ?",
     reponse: ["9 jours", "9 mois", "9 ans"],
     solution: "9 ans",
     "commentaire-false": "Et oui, c'est long !",
@@ -114,11 +115,11 @@ const quiz = [
   },
   {
     id: "question-13",
-    question: "Quelle est la planète qui comporte le plus de volcans ?",
-    reponse: ["Vénus", "La Lune", "Mercure"],
-    solution: "Vénus",
-    "commentaire-false": "Environ 1600 volcans, c'est énorme !",
-    "commentaire-true": "Un vrai astronaute !",
+    question: "Quelle est la planète qui comporte le plus de volcans actifs ?",
+    reponse: ["Vénus", "La Terre", "Mercure"],
+    solution: "La Terre",
+    "commentaire-false": "Environ 1700 volcans actifs, c'est énorme !",
+    "commentaire-true": "Environ 1700 volcans actifs, c'est énorme hein ?",
   },
   {
     id: "question-14",
@@ -136,7 +137,7 @@ const quiz = [
   {
     id: "question-15",
     question:
-      "Quel est le corps céleste le plus brillant dans le ciel vu depuis la Terre ?",
+      "Parmis ces trois corps céleste, lequel est le plus brillant dans le ciel, vu depuis la Terre ?",
     reponse: ["La Lune", "Jupiter", "Mars"],
     solution: "La Lune",
     "commentaire-false": "Ce soir, tu lèveras les yeux pour regarder le ciel",

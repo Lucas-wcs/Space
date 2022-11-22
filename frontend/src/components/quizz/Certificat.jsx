@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import certificat from "../../assets/images/astronauts/certificat.png";
-import "../../css/quizz/Certificat.css";
+// import "../../css/quizz/certificat.css";
 
 function Certificat({ somme }) {
   return (

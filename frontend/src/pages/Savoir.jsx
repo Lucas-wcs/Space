@@ -2,14 +2,14 @@
 import React, { useState, useEffect } from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import axios from "axios";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import * as Scroll from "react-scroll";
 import KnowledgeImage from "../components/savoir/KnowledgeImage";
 import KnowledgeCards from "../components/savoir/KnowledgeCards";
 import GeneralStars from "../components/GeneralStars";
 import "../css/stars/GeneralStars.css";
-// import api from "../API-example/API-egz";
 
 function KnowledgePage() {
-  // const [informations, setInformations] = useState(api.planets[0]);
   const [informations, setInformations] = useState([]);
 
   const getAllPlanets = () => {
@@ -43,12 +43,26 @@ function KnowledgePage() {
     );
   };
 
+  const { scroller } = Scroll;
+
+  function scrollTo() {
+    scroller.scrollTo("knowledge-title", {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: -100,
+    });
+  }
+
   return (
     <div className="knowledge-page">
       <GeneralStars />
       {informations.length > 0 && (
         <div>
-          <KnowledgeImage clickEvent={() => randomize()} />
+          <KnowledgeImage
+            clickEvent={() => randomize()}
+            scrollTo={() => scrollTo()}
+          />
           {current && (
             <KnowledgeCards
               title={current.title}
