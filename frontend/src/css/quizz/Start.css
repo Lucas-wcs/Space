@@ -1,0 +1,48 @@
+.start {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start form {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  background-color: rgb(238, 240, 242);
+  border: solid#EEC643 3px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px rgba(255, 238, 0, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.start input {
+  text-align: center;
+  height: 16vh;
+  width: 80%;
+  font-size: 20pt;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .start {
+  }
+
+  .start form {
+    height: 10%;
+  }
+
+  .start input {
+    height: 10vh;
+    font-size: 10pt;
+  }
+}

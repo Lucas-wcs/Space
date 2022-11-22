@@ -37,7 +37,7 @@ function Footer() {
         className="alien"
         drag
         dragElastic={1}
-        dragConstraints={{ left: -100, top: -100, right: 0, bottom: 0 }}
+        dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
         width="357"
         height="259"
         viewBox="0 0 357 259"

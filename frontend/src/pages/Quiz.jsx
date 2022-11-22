@@ -3,6 +3,7 @@ import axios from "axios";
 import Questionnaire from "../components/quizz/Questionnaire";
 import Astro from "../components/quizz/Astro";
 import Certificat from "../components/quizz/Certificat";
+import Start from "../components/quizz/Start";
 import "../css/quizz/Quiz.css";
 
 function Quiz() {
@@ -10,6 +11,8 @@ function Quiz() {
   const [resptrue, setResptrue] = useState(0);
   const [api, setApi] = useState([]);
   const [somme, setSomme] = useState(0);
+  const [numQuestions, setNumQuestions] = useState(3);
+  const [start, setStart] = useState(false);
 
   useEffect(() => {
     axios
@@ -19,6 +22,18 @@ function Quiz() {
       })
       .catch((err) => console.error(err));
   }, []);
+
+  function updateStart() {
+    setStart(!start);
+  }
+
+  function updateSomme() {
+    setSomme((prevSomme) => prevSomme + 1);
+  }
+
+  function updateNumQuestions(nombre) {
+    setNumQuestions(nombre);
+  }
 
   function trueFalse(verif) {
     setResptrue(verif);
@@ -30,9 +45,9 @@ function Quiz() {
 
   return (
     <div>
-      {api.length > 0 && (
+      {api.length > 0 && start && (
         <div className="leTout">
-          {newQuest < 1 ? (
+          {newQuest < numQuestions ? (
             <div className="Quiz">
               <Questionnaire
                 question={api[newQuest].question}
@@ -40,22 +55,26 @@ function Quiz() {
                 solution={api[newQuest].solution}
                 trueFalse={(verif) => trueFalse(verif)}
                 parentProp={() => parent()}
-                somme={somme}
-                setSomme={setSomme}
+                setSomme={() => updateSomme()}
               />
 
               <Astro
                 comfalse={api[newQuest]["commentaire-false"]}
                 comtrue={api[newQuest]["commentaire-true"]}
                 resptrue={resptrue}
-                somme={somme}
-                setSomme={setSomme}
               />
             </div>
           ) : (
-            <Certificat somme={somme} setSomme={setSomme} />
+            <Certificat somme={somme} numQuestions={numQuestions} />
           )}
         </div>
+      )}
+      {api.length > 0 && !start && (
+        <Start
+          updateStart={() => updateStart()}
+          somme={somme}
+          updateNumQuestions={(nombre) => updateNumQuestions(nombre)}
+        />
       )}
     </div>
   );

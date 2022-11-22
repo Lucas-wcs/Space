@@ -12,7 +12,7 @@ function Home() {
   const [card, setCard] = useState(false);
 
   function handleClick(planetName) {
-    setCard(!card);
+    setCard(true);
     setInfo(planetName);
   }
   // window.addEventListener('click', () => {

@@ -8,7 +8,6 @@ function Questionnaire({
   solution,
   parentProp,
   trueFalse,
-  somme,
   setSomme,
 }) {
   const [quesSuiv, setQueSuiv] = React.useState(false);
@@ -24,7 +23,7 @@ function Questionnaire({
   function compareResponse(voila) {
     setRespColor(true);
     if (voila === solution) {
-      setSomme(somme + 1);
+      setSomme();
       trueFalse(2);
       console.warn("bravo");
     } else {
@@ -103,7 +102,6 @@ Questionnaire.propTypes = {
   solution: PropTypes.string.isRequired,
   question: PropTypes.string.isRequired,
   trueFalse: PropTypes.func.isRequired,
-  somme: PropTypes.number.isRequired,
   setSomme: PropTypes.func.isRequired,
   responses: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
