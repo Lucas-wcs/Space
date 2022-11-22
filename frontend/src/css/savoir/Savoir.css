@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 10vh;
   margin-left: 130px;
   width: 170px;
   height: 200px;
@@ -35,17 +36,19 @@
 }
 
 .knowledge-astronaut img {
-  margin-bottom: 40px;
-  width: clamp(180px, 60vw, 300px);
+  margin-top: 10vh;
+  width: clamp(30vh, 60vw, 40vh);
   animation: astronaut 3s infinite ease-in-out;
   margin-left: 1%;
 }
 
 .knowledge-astronaut button {
+  cursor: pointer;
   transition: transform 0.4s ease-in-out;
   position: absolute;
   border: none;
   top: 60vh;
+  left: 70%;
   height: clamp(20px, 14vw, 80px);
   width: clamp(20px, 14vw, 80px);
   border-radius: 50%;
@@ -62,13 +65,13 @@
 
 @keyframes astronaut {
   0% {
-    transform: translateY(-20px) scaleX(-1);
+    transform: translateY(-20px);
   }
   50% {
-    transform: translateY(0) scaleX(-1);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(-20px) scaleX(-1);
+    transform: translateY(-20px);
   }
 }
 
@@ -95,14 +98,22 @@
 
 /* KNOWLEDGE PART */
 
+.knowledge-card {
+  animation: fadein 4s;
+}
+
 .title {
   text-align: center;
   background-color: white;
-  border-radius: var(--border-radius);
   margin-inline: 10%;
-  margin-top: 50px;
-  padding-block: 2px;
-  border: 4px solid #eec643;
+  margin-top: 15vh;
+  padding-block: 0.5vh;
+  border: double 4px transparent;
+  border-radius: var(--border-radius);
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top right, #eec643, #b68f0e);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   box-shadow: -10px 10px 0px 4px rgba(202, 202, 202, 0.71),
     -20px 20px 0px 4px rgba(202, 202, 202, 0.21);
 }
@@ -116,16 +127,14 @@
 }
 
 .knowledge {
-  height: calc(100% - 70px);
-  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-block: 12px;
   margin-top: 180px;
-  margin-bottom: 70px;
-  margin-inline: 40px;
+  margin-bottom: 20vh;
+  margin-inline: 10%;
   border: 4px solid #eec643;
   border-radius: var(--border-radius);
   background-color: white;
@@ -139,6 +148,15 @@
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .knowledge p {
   text-align: center;
   font-family: var(--font-family);
@@ -148,11 +166,7 @@
 
 @media screen and (min-width: 768px) {
   .knowledge {
-    margin-top: 300px;
-  }
-
-  .knowledge-elements {
-    margin-inline: 8%;
+    margin-top: 30vh;
   }
 
   .knowledge-elements p {
@@ -165,7 +179,8 @@
   }
 
   .knowledge-bubble img {
-    height: 220px;
+    height: clamp(30vh, 28vw, 32vh);
+    width: 35vh;
   }
 
   .knowledge-bubble p {
@@ -175,15 +190,19 @@
 
   .knowledge-astronaut button {
     top: 70vh;
-    left: 70%;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .knowledge-astronaut img {
+    margin-left: 6vh;
+    margin-bottom: 20vh;
   }
 
   .knowledge img {
     rotate: -45deg;
-    top: -240px;
-    left: -160px;
-    height: 300px;
+    top: -120px;
+    left: -110px;
+    height: 200px;
   }
 }
