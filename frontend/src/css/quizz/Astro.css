@@ -14,7 +14,7 @@
   align-items: center;
   text-align: center;
   width: 70%;
-  top: -100px;
+  top: -25px;
 }
 
 .bulles {
@@ -26,18 +26,18 @@
   position: absolute;
   text-align: center;
   font-family: "Fredoka", sans-serif;
-  font-size: 1.3rem;
-  width: 100%;
+  font-size: 1.1rem;
+  width: 80%;
   height: 60%;
-  margin: auto;
-  top: 30%;
+  top: 24%;
 }
 
 .personnage {
   position: fixed;
   width: 35%;
-  bottom: -5%;
-  right: 0;
+  bottom: 0;
+  right: 80px;
+
 }
 
 @media screen and (max-width: 600px) {
