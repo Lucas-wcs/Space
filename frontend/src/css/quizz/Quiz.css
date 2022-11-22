@@ -19,6 +19,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
     width: 100%;
+    height: 50%;
   }
+  /*.leTout {
+    height: calc(100vh - 122px);
+    width: 90vw;
+    margin: 0;
+    display: none;
+  }*/
 }
