@@ -1,0 +1,32 @@
+.start {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start form {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.start input {
+  text-align: center;
+  height: 16vh;
+  width: 80%;
+  font-size: 20pt;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

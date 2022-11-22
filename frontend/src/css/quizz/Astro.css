@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 70%;
+  width: 80%;
   top: -5%;
 }
 
@@ -35,13 +35,12 @@
 .personnage {
   position: fixed;
   width: 35%;
-  bottom: 0;
-  right: 8%;
-  transform:rotate(2deg);
+  bottom: -25px;
+  right: 10%;
+  transform: rotate(2deg);
 }
 
 @media screen and (max-width: 600px) {
-
   .interrogation {
     display: flex;
     width: 75%;
@@ -52,16 +51,17 @@
     width: 96%;
     margin-left: 100%;
   }
-  
+
   .truefalse {
     width: 80%;
     margin-left: 100%;
+    top: 15%;
   }
-  
+
   .personnage {
-    transform: scaleX(-1) rotate(4deg);
-    width: 67%;
-    left: -3%;
-    bottom: 14px;
+    transform: scaleX(-1) rotate(5deg);
+    width: 260px;
+    left: 0px;
+    bottom: 21px;
   }
 }
