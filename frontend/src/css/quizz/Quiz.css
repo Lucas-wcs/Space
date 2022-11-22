@@ -16,14 +16,17 @@
 
 @media screen and (max-width: 600px) {
   .Quiz {
-    position: relative;
-    left: -5%;
-    padding: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
     width: 100%;
-    padding: 20px;
-    display: flex;
+    height: 50%;
   }
+  /*.leTout {
+    height: calc(100vh - 122px);
+    width: 90vw;
+    margin: 0;
+    display: none;
+  }*/
 }
