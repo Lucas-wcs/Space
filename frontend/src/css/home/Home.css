@@ -231,6 +231,7 @@
 
 .astronaut-container {
   position: absolute;
+  rotate: -2deg;
   left: -300px;
   bottom: 40px;
   height: 200px;
@@ -244,7 +245,6 @@
     left: -300px;
   }
   40% {
-    rotate: 0deg;
     left: 40px;
   }
   55% {
@@ -252,7 +252,6 @@
     left: 60px;
   }
   100% {
-    rotate: 0deg;
     left: 40px;
   }
 }
@@ -394,7 +393,7 @@
     left: 65%;
   }
   .astronaut-container {
-    bottom: 80px;
+    bottom: 20px;
     scale: 0.7;
     left: -300px;
     animation: astro 1s linear 500ms forwards;
@@ -404,16 +403,14 @@
       left: -300px;
     }
     40% {
-      rotate: 0deg;
-      left: 0px;
+      left: 10px;
     }
     55% {
       rotate: 10deg;
-      left: 30px;
+      left: 40px;
     }
     100% {
-      rotate: 0deg;
-      left: 0px;
+      left: 10px;
     }
   }
 }

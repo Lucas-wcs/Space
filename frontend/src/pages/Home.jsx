@@ -15,6 +15,9 @@ function Home() {
     setCard(!card);
     setInfo(planetName);
   }
+  // window.addEventListener('click', () => {
+
+  // })
 
   useEffect(() => {
     axios

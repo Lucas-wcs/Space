@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 2%;
   width: 80%;
   height: 70%;
   margin-top: 12%;
@@ -22,7 +22,7 @@
 .resp2,
 .resp3 {
   width: 100%;
-  height: 90px;
+  height: 70%;
   font-family: "Fredoka", sans-serif;
   font-size: 1.6rem;
   background-color: #eef0f2;
@@ -58,28 +58,28 @@
 
 @media screen and (max-width: 600px) {
   .questionnaire {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    width: 80%;
-    height: 130%;
-    margin-top: 20px;
+    height: 85%;
   }
 
-  .suivant {
-    position: absolute;
-    font-size: 1.6rem;
-    color: #eef0f2;
-    bottom: -90px;
-    width: 50%;
-    height: 70px;
+  .question_titre {
+    margin: 10px 0 10px;
+    font-size: 1.3rem;
   }
 
   .resp1,
   .resp2,
   .resp3 {
     width: 120%;
+    font-size: 1.3rem;
+  }
+
+  .suivant {
+    position: absolute;
+    font-size: 1.3rem;
+    color: #eef0f2;
+    bottom: -22%;
+    left: -10%;
+    width: 50%;
+    height: 18%;
   }
 }

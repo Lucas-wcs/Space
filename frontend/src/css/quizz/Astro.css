@@ -14,7 +14,7 @@
   align-items: center;
   text-align: center;
   width: 70%;
-  top: -25px;
+  top: -5%;
 }
 
 .bulles {
@@ -36,33 +36,31 @@
   position: fixed;
   width: 35%;
   bottom: 0;
-  right: 80px;
+  right: 8%;
+  transform: rotate(2deg);
 }
 
 @media screen and (max-width: 600px) {
+  .interrogation {
+    display: flex;
+    width: 75%;
+    margin-top: -105px;
+  }
+
   .bulles {
-    transform: scale(-1, -1);
-    scale: 0.7;
-    word-break: break-all;
-    width: 200%;
-    margin-right: 150%;
-    bottom: -50%;
-  }
-
-  .bulle-container {
-    width: 70%;
-    top: 0;
-  }
-
-  .personnage {
-    width: 60%;
-    right: -5%;
-    bottom: 2%;
+    width: 96%;
+    margin-left: 100%;
   }
 
   .truefalse {
-    width: 100%;
-    color: brown;
-    right: 70%;
+    width: 80%;
+    margin-left: 100%;
+  }
+
+  .personnage {
+    transform: scaleX(-1) rotate(4deg);
+    width: 67%;
+    left: -3%;
+    bottom: 14px;
   }
 }
