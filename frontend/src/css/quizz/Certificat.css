@@ -2,9 +2,10 @@
   position: relative;
   display: flex;
   padding: 20px;
+  top:70px;
   width: 70%;
   height: 70vh;
-  margin: auto auto;
+  margin: auto;
   border-radius: 10px;
   background-color: rgba(238, 240, 242, 0.666);
   border: solid#EEC643 3px;
@@ -78,14 +79,15 @@
 
   .title-certificat {
     position: relative;
-    top: -30px;
-    left: -80px;
-    font-size: 3rem;
+    top: -7%;
+    left: -30%;
+    font-size: 2.5rem;
   }
   .voyage {
     position: relative;
+    font-size: 1.3rem;
     left: -37%;
-    bottom: -15%;
-    width: 400px;
+    bottom: -3%;
+    width: 300px;
   }
 }
