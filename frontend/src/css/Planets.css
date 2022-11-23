@@ -172,6 +172,7 @@
   color: white;
   text-align: center;
   font-family: "Fredoka";
+  scale: 0.95;
   font-size: 32px;
   /* border: 1px red solid; */
   /* scale: 0.7; */
@@ -200,7 +201,8 @@
 }
 
 .planetImg:hover {
-  width: 100%;
+  /* width: 100%; */
+  scale: 1;
 }
 
 figure {
