@@ -6,8 +6,6 @@ import axios from "axios";
 import * as Scroll from "react-scroll";
 import KnowledgeImage from "../components/savoir/KnowledgeImage";
 import KnowledgeCards from "../components/savoir/KnowledgeCards";
-import GeneralStars from "../components/GeneralStars";
-import "../css/stars/GeneralStars.css";
 
 function KnowledgePage() {
   const [informations, setInformations] = useState([]);
@@ -56,7 +54,6 @@ function KnowledgePage() {
 
   return (
     <div className="knowledge-page">
-      <GeneralStars />
       {informations.length > 0 && (
         <div>
           <KnowledgeImage
