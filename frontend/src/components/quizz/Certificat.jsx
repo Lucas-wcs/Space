@@ -5,7 +5,7 @@ import animationData from "../../lotties/rocket-launch.json";
 import certificat from "../../assets/images/astronauts/certificat.png";
 import "../../css/quizz/Certificat.css";
 
-function Certificat({ somme, numQuestions }) {
+function Certificat({ somme, numQuestions, updateStart }) {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -24,7 +24,7 @@ function Certificat({ somme, numQuestions }) {
       <img className="champion" src={certificat} alt="nous" />
       <div className="cadre-point">
         <h1 className="title-certificat">BRAVO !</h1>
-        <p className="p-certificat"> tu as obtenu un score de:</p>
+        <p className="p-certificat">Tu as obtenu un score de:</p>
 
         <div className="score">
           <p>
@@ -33,6 +33,14 @@ function Certificat({ somme, numQuestions }) {
         </div>
 
         <p className="voyage">A bientot pour un nouveau voyage!</p>
+
+        <button
+          type="button"
+          className="startAgainBtn"
+          onClick={() => updateStart()}
+        >
+          Recommence!
+        </button>
       </div>
     </div>
   );
@@ -43,4 +51,5 @@ export default Certificat;
 Certificat.propTypes = {
   somme: PropTypes.number.isRequired,
   numQuestions: PropTypes.string.isRequired,
+  updateStart: PropTypes.func.isRequired,
 };

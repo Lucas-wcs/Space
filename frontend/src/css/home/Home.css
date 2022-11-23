@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400");
+
 .Home {
+  font-family: "Fredoka" sans-serif;
   position: relative;
   height: 100vh;
   /* height: calc(100vh - 127px); */
@@ -267,6 +270,7 @@
   animation: bulle 1.1s linear 550ms forwards;
 }
 .info {
+  font-family: "Fredoka" sans-serif;
   opacity: 1;
   position: absolute;
   top: -70px;
@@ -281,6 +285,7 @@
 }
 
 .info .p-info {
+  font-family: "Fredoka" sans-serif;
   font-size: 1.3rem;
   white-space: normal;
   position: relative;

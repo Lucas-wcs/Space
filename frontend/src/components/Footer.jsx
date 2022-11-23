@@ -256,16 +256,13 @@ function Footer() {
           <ul className="lorem1 list-container">
             <h2>Contact</h2>
             <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
           </ul>
           <ul className="lorem2 list-container">
             <h2>Links</h2>
             <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
           </ul>
           <ul className="lorem3 list-container">
             <h2>Planetarium</h2>
-            <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>
         </div>

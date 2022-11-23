@@ -8,7 +8,7 @@ import "../css/quizz/Quiz.css";
 // import { array } from "prop-types";
 
 function Quiz() {
-  const [newQuest, setNewQuest] = useState(0);
+  const [newQuest, setNewQuest] = useState(Math.floor(Math.random() * 21));
   const [resptrue, setResptrue] = useState(0);
   const [api, setApi] = useState([]);
   const [somme, setSomme] = useState(0);
@@ -27,6 +27,8 @@ function Quiz() {
 
   function updateStart() {
     setStart(!start);
+    setSomme(0);
+    setCompteur(0);
   }
 
   function updateSomme() {
@@ -72,7 +74,11 @@ function Quiz() {
               />
             </div>
           ) : (
-            <Certificat somme={somme} numQuestions={numQuestions} />
+            <Certificat
+              somme={somme}
+              numQuestions={numQuestions}
+              updateStart={() => updateStart()}
+            />
           )}
         </div>
       )}

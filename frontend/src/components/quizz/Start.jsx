@@ -8,11 +8,18 @@ function Start({ updateStart, updateNumQuestions }) {
       <form onSubmit={() => updateStart()}>
         <input
           type="text"
-          placeholder="Combien de questions veux-tu?"
+          placeholder="Selectionne entre 1 à 21 questions."
           onChange={(event) => updateNumQuestions(event.target.value)}
           size={50}
           height={108}
         />
+        <button
+          type="button"
+          className="startBtn"
+          onClick={() => updateStart()}
+        >
+          OK
+        </button>
       </form>
     </div>
   );
