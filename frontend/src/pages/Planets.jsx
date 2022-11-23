@@ -4,6 +4,7 @@ import "../css/Planets.css";
 import Filter from "@components/Filter";
 import PlanetImg from "@components/PlanetImg";
 import axios from "axios";
+import Shortcutfilter from "@components/Shortcutfilter";
 
 function Planets() {
   const [searchValue, setSearchValue] = React.useState("");
@@ -40,6 +41,9 @@ function Planets() {
 
   const [api, setApi] = React.useState([]);
 
+  const [displayFilter, setDisplayFilter] = React.useState(false);
+  const handleFilter = () => setDisplayFilter(!displayFilter);
+
   useEffect(() => {
     axios
       .get("http://localhost:5007/api/planets")
@@ -52,11 +56,21 @@ function Planets() {
   return (
     <div className="Planets">
       <div className="intro">
-        <img
-          src="./src/assets/images/astronauts/astronaut_1.png"
-          alt="avatar-astronaut"
-        />
+        <div className="containerAstro">
+          <div className="imgAstronaut">
+            <img
+              className="avatarAstro"
+              src="./src/assets/images/astronauts/astronaut_1.png"
+              alt="avatar-astronaut"
+            />
+          </div>
+        </div>
         <div className="bubble">
+          <img
+            className="imgbubble"
+            src="./src/assets/images/bulle-rectangle.png"
+            alt="bubble carton"
+          />
           <p>
             Bienvenue sur la page planète.
             <br />
@@ -67,25 +81,28 @@ function Planets() {
       </div>
 
       <div className="main">
-        <Filter
-          onSearchValue={onSearchValue}
-          value={searchValue}
-          onChangeCheckboxPlanets={onClickCheckboxPlanets}
-          onChangeCheckboxLune={onClickCheckboxLune}
-          onChangeCheckboxTellurique={onClickCheckboxTellurique}
-          onChangeCheckboxGazeuse={onClickCheckboxGazeuse}
-          onChangeCheckboxNaine={onClickCheckboxNaine}
-          setCheckboxTelluriqueToFalse={setCheckboxTelluriqueToFalse}
-          setCheckboxGazeuseToFalse={setCheckboxGazeuseToFalse}
-          setCheckboxNaineToFalse={setCheckboxNaineToFalse}
-          setCheckboxPlanetsToFalse={setCheckboxPlanetsToFalse}
-          setCheckboxLuneToFalse={setCheckboxLuneToFalse}
-          checkboxPlanets={checkboxPlanets}
-          checkboxLune={checkboxLune}
-          checkboxTellurique={checkboxTellurique}
-          checkboxGazeuse={checkboxGazeuse}
-          checkboxNaine={checkboxNaine}
-        />
+        <Shortcutfilter handleFilter={handleFilter} />
+        {displayFilter && (
+          <Filter
+            onSearchValue={onSearchValue}
+            value={searchValue}
+            onChangeCheckboxPlanets={onClickCheckboxPlanets}
+            onChangeCheckboxLune={onClickCheckboxLune}
+            onChangeCheckboxTellurique={onClickCheckboxTellurique}
+            onChangeCheckboxGazeuse={onClickCheckboxGazeuse}
+            onChangeCheckboxNaine={onClickCheckboxNaine}
+            setCheckboxTelluriqueToFalse={setCheckboxTelluriqueToFalse}
+            setCheckboxGazeuseToFalse={setCheckboxGazeuseToFalse}
+            setCheckboxNaineToFalse={setCheckboxNaineToFalse}
+            setCheckboxPlanetsToFalse={setCheckboxPlanetsToFalse}
+            setCheckboxLuneToFalse={setCheckboxLuneToFalse}
+            checkboxPlanets={checkboxPlanets}
+            checkboxLune={checkboxLune}
+            checkboxTellurique={checkboxTellurique}
+            checkboxGazeuse={checkboxGazeuse}
+            checkboxNaine={checkboxNaine}
+          />
+        )}
         {api.length > 0 && (
           <div className="containerPlanets">
             {api
@@ -136,16 +153,14 @@ function Planets() {
               })
               .map((planet) => {
                 return (
-                  <div className="containerCards">
+                  <div className="containerCards" key={planet.url}>
                     <PlanetImg
-                      key={planet.url}
                       name={planet.name}
                       src={planet.url}
                       handlePlanets={(className) => handlePlanets(className)}
                     />
                     {planet.name === classN && clickPlanets && (
                       <PlanetCard
-                        key={planet.name}
                         name={planet.name}
                         description={planet["planet-description"]}
                         facts={planet.curiosites["short-description"]}
