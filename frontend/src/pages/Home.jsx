@@ -8,16 +8,13 @@ import "../css/home/Home.css";
 
 function Home() {
   const [api, setApi] = useState([]);
-  const [info, setInfo] = useState("Welcome");
+  const [info, setInfo] = useState("Bienvenue AstroQuizz!");
   const [card, setCard] = useState(false);
 
   function handleClick(planetName) {
     setCard(true);
     setInfo(planetName);
   }
-  // window.addEventListener('click', () => {
-
-  // })
 
   useEffect(() => {
     axios

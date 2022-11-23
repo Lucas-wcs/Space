@@ -26,7 +26,7 @@ function TypeWriter({ text }) {
 
   return (
     <h1 className="p-info">
-      {text !== "Welcome" ? currentText : text}
+      {text !== "Bienvenue AstroQuizz" ? currentText : text}
       <span className="cursor" />
     </h1>
   );
