@@ -281,11 +281,13 @@
 }
 
 .info .p-info {
+  font-size: 1.3rem;
+  white-space: normal;
   position: relative;
   text-align: center;
   width: 0;
   overflow: hidden;
-  animation: type 1s steps(8) 2s forwards;
+  animation: type 1s steps(18) 2s forwards;
 }
 .info .p-info .cursor {
   position: absolute;

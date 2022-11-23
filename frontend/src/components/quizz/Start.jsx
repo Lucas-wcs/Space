@@ -8,7 +8,7 @@ function Start({ updateStart, updateNumQuestions }) {
       <form onSubmit={() => updateStart()}>
         <input
           type="text"
-          placeholder="Number of questions"
+          placeholder="Combien de questions veux-tu?"
           onChange={(event) => updateNumQuestions(event.target.value)}
           size={50}
           height={108}
