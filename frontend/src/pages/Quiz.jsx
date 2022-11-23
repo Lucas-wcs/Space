@@ -5,6 +5,7 @@ import Astro from "../components/quizz/Astro";
 import Certificat from "../components/quizz/Certificat";
 import Start from "../components/quizz/Start";
 import "../css/quizz/Quiz.css";
+// import { array } from "prop-types";
 
 function Quiz() {
   const [newQuest, setNewQuest] = useState(0);
@@ -13,6 +14,7 @@ function Quiz() {
   const [somme, setSomme] = useState(0);
   const [numQuestions, setNumQuestions] = useState(3);
   const [start, setStart] = useState(false);
+  const [compteur, setCompteur] = useState(0);
 
   useEffect(() => {
     axios
@@ -39,15 +41,20 @@ function Quiz() {
     setResptrue(verif);
   }
 
+  const apiArray = api;
+
   function parent() {
-    setNewQuest((prev) => prev + 1);
+    const random = Math.floor(Math.random() * apiArray.length);
+    setNewQuest(random);
+    apiArray.splice(random, 1);
+    setCompteur((prev) => prev + 1);
   }
 
   return (
     <div>
       {api.length > 0 && start && (
         <div className="leTout">
-          {newQuest < numQuestions ? (
+          {compteur < numQuestions ? (
             <div className="Quiz">
               <Questionnaire
                 question={api[newQuest].question}

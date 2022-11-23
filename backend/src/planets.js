@@ -342,7 +342,7 @@ const planets = [
       ],
       "long-description": [
         {
-          title: "Sais-tu combien de planète Terre peut contenir Jupiter ?",
+          title: "Sais-tu combien de planète Terre pourrait contenir Jupiter ?",
           answer:
             "Jupiter est une géante gazeuse, une boule d'hydrogène et d'hélium pour l'essentiel, assez grande pour contenir plus de 1 300 Terres.",
         },
@@ -866,7 +866,7 @@ const planets = [
       "long-description": [
         {
           title:
-            "Sais-tu qu'elle est la lune qui reçoit le plus de météorites ?",
+            "Sais-tu quelle est la lune qui reçoit le plus de météorites ?",
           answer:
             "Parmi les satellites d'Uranus, Umbriel a la surface la plus marquée par des cratères d'impact après Obéron, certains mesurant jusqu'à 210 km de diamètre.",
         },
@@ -907,7 +907,7 @@ const planets = [
       "long-description": [
         {
           title:
-            "Sais-tu que le vent souffle plus fort que nulle part ailleurs",
+            "Sais-tu que le vent souffle plus fort que nulle part ailleurs sur Neptune ?",
           answer:
             "L'atmosphère de la planète, qui s'étend jusqu'à des profondeurs incroyables et abrite les vents parmi les plus puissants du système solaire.",
         },
@@ -948,7 +948,7 @@ const planets = [
       "short-description": ["Elle est l'une des quatorze lunes de Neptune"],
       "long-description": [
         {
-          title: "Sais-tu que de geysers géants existent sur Triton ?",
+          title: "Sais-tu que de géants geysers existent sur Triton ?",
           answer:
             "Triton possède des geysers qui projettent des matériaux glacés à plus de huit kilomètres de haut dans l'atmosphère glaciale.",
         },
