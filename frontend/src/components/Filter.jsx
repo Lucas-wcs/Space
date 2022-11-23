@@ -83,7 +83,7 @@ function Filter({
           type="checkbox"
           checked={checkboxGazeuse}
           name="gazeuse"
-          onClick={() => {
+          onChange={() => {
             onChangeCheckboxGazeuse();
             setCheckboxTelluriqueToFalse();
             setCheckboxNaineToFalse();
@@ -112,7 +112,7 @@ function Filter({
 
 Filter.propTypes = {
   onSearchValue: PropTypes.func.isRequired,
-  value: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
   onChangeCheckboxPlanets: PropTypes.func.isRequired,
   onChangeCheckboxLune: PropTypes.func.isRequired,
   onChangeCheckboxTellurique: PropTypes.func.isRequired,
@@ -123,7 +123,7 @@ Filter.propTypes = {
   setCheckboxTelluriqueToFalse: PropTypes.func.isRequired,
   setCheckboxPlanetsToFalse: PropTypes.func.isRequired,
   setCheckboxLuneToFalse: PropTypes.func.isRequired,
-  checkboxLune: PropTypes.func.isRequired,
+  checkboxLune: PropTypes.bool.isRequired,
   checkboxPlanets: PropTypes.bool.isRequired,
   checkboxTellurique: PropTypes.bool.isRequired,
   checkboxGazeuse: PropTypes.bool.isRequired,

@@ -9,7 +9,9 @@ function PlanetImg({ name, src, handlePlanets }) {
       onClick={() => handlePlanets(name)}
     >
       <h3>{name}</h3>
-      <img src={`./src${src}`} alt={name} />
+      <div className="img">
+        <img src={`./src${src}`} alt={name} />
+      </div>
     </button>
   );
 }
