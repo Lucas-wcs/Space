@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 
-// import ufo from "../assets/images/ufo.svg"
-
 function GeneralStars() {
   const [stars, setStars] = useState([]);
   const [width, height] = useWindowSize();
