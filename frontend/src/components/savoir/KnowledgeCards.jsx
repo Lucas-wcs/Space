@@ -4,7 +4,7 @@ import React from "react";
 function KnowledgeCards({ title, answer, url }) {
   return (
     <div className="knowledge-card">
-      <div className="title">
+      <div className="title" name="knowledge-title">
         <p>{title}</p>
       </div>
       <div className="knowledge-elements">
@@ -16,8 +16,6 @@ function KnowledgeCards({ title, answer, url }) {
     </div>
   );
 }
-
-// `./src${url}`
 
 export default KnowledgeCards;
 

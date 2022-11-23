@@ -10,7 +10,7 @@ const planets = [
     placement: 1,
     span: 1,
     "planet-description":
-      "Mercure est la planète premiere planète du système solaire. Il s'agit de la planetes tellurique, la plus proche du Soleil où un jour dure environ deux années. Mercure est quasiment sphérique et ne s'applatie pas du à sa faibles vitesse de rotation. Elle doit son nom au messager des dieux dans la mytholigie romaine. Elle doit son nom a cause de la vitesse a laquelle elle se deplace dans le ciel.",
+      "Mercure est la planète premiere planète du système solaire. Il s'agit de la planetes tellurique, la plus proche du Soleil où un jour dure environ deux années. Mercure est quasiment sphérique et ne s'applatie pas, ce qui est dû à sa faible vitesse de rotation. Elle doit son nom au messager des dieux dans la mythologie romaine. Elle doit son nom à cause de la vitesse à laquelle elle se deplace dans le ciel.",
     curiosites: {
       "short-description": [
         "Distance par rapport au Soleil : 46 001 200 à 69 816 900 kilomètres",
@@ -36,7 +36,7 @@ const planets = [
         {
           title: "Sais-tu pourquoi Mercure s'appelle Mercure ?",
           answer:
-            "Mercure a été nommé d'après un dieu romain du Commerce et des Voleurs, messager des dieux, fils de Jupiter. Dans la mythologie grèque, ce dieu est connu sous le nom d'Hermès",
+            "Mercure a été nommé d'après un dieu romain du Commerce et des Voleurs, messager des dieux, fils de Jupiter. Dans la mythologie grecque, ce dieu est connu sous le nom d'Hermès",
         },
       ],
     },
@@ -60,7 +60,7 @@ const planets = [
     placement: 2,
     span: 1,
     "planet-description":
-      "Vénus est la deuxieme planete du système solaire. il s'agit d'une planete tellurique. Vénus est le deuxieme astre le plus visible dans le ciel après le Soleil et la Lune, on l'appelle l'étoile du berger. Vénus est la terre comporte des similtitude telle que leur diamètre, masse, proximité du Soleil. Par d'autre aspect elle diffère  la pression atmosphérique est 92 fois superieur à celle de la terre. Elle est la planète la plus chaude du système solaire avec une temperature moyenne à la surface de 462 °C. La planète est enveloppé d'une couche opaque de nuages d'acide sulfurique. La surface de Vénus est un paysage désertique  sec et rocheux où se déroule toujours un volcanisme",
+      "Vénus est la deuxième planète du système solaire. il s'agit d'une planète tellurique. Vénus est le deuxième astre le plus visible dans le ciel après le Soleil et la Lune, on l'appelle l'étoile du berger. Vénus et la Terre comportent des similitudes telles que leur diamètre, leur masse, leur proximité avec le Soleil. En revanche, par d'autres aspects, elles diffèrent en terme de pression atmosphérique. En effet, celle de Vénus est 92 fois supérieure à celle de la Terre. Elle est également la planète la plus chaude du système solaire avec une température moyenne à la surface de 462 °C. La planète est enveloppée d'une couche opaque de nuages d'acide sulfurique. La surface de Vénus est un paysage désertique sec et rocheux, avec un volcanisme",
     curiosites: {
       "short-description": [
         "Distance par rapport au Soleil : 107 477 000 à 108 939 000 kilomètres",
@@ -105,7 +105,7 @@ const planets = [
     placement: 3,
     span: 1,
     "planet-description":
-      "La Terre est la troisième planete du système solaire. Elle est aussi la seul planète connue pour y abriter la Vie. Elle mets 365,256 jours pour faire une rotation autour du Soleil. Elle fait un tour sur elles meme en 23h 56min 4s. La Terre possède une inclinaison de 23°, ce qui cause l'apparition des saisons. Elle possède aussi un satellite naturel la Lune. ",
+      "La Terre est la troisième planète du système solaire. Elle est aussi la seule planète connue pour y abriter la vie. Elle met 365,256 jours pour faire une rotation autour du Soleil. Elle fait un tour sur elle-même en 23 heures, 56 minutes et 4 secondes. La Terre possède une inclinaison de 23°, ce qui cause l'apparition des saisons. Elle possède aussi un satellite naturel surnommé la Lune.",
     curiosites: {
       "short-description": [
         "Distance par rapport au Soleil : 147 098 291 à 152 098 233 kilomètres",
@@ -143,7 +143,7 @@ const planets = [
     naine: false,
     tellurique: true,
     aroundPlanet: null,
-    discoveredBy: "",
+    discoveredBy: "It is our home!",
     discoveryDate: "",
   },
   {
@@ -157,7 +157,7 @@ const planets = [
     placement: "Earth",
     span: 1,
     "planet-description":
-      "La Lune est le stellite naturel de la terre. Elle est le cinquième plus gros satellite naturel du système solaire. Ainsi que le deuxième satellite le plus dense. La lune est en rotation synchrone avec la terre ce qui fait que l'on voit toujours la même face. Sa proximeté avec la Terre provoque les marées",
+      "La Lune est le satellite naturel de la Terre. Elle est le cinquième plus gros satellite naturel du Système Solaire, ainsi que le deuxième satellite le plus dense. La lune est en rotation synchrone avec la Terre, ce qui fait que l'on voit toujours la même face. Sa proximité avec la Terre provoque les marées",
     curiosites: {
       curiosites: {
         "short-description": [
@@ -208,7 +208,7 @@ const planets = [
     placement: 4,
     span: 1,
     "planet-description":
-      "Mars est la quatrième planète du système solaire. Mars est une planète tellurique comme la Terre mais environ 10 fois plus petite ",
+      "Mars est la quatrième planète du Système Solaire. Mars est une planète tellurique comme la Terre mais environ 10 fois plus petite ",
     curiosites: {
       "short-description": [
         "Distance par rapport au Soleil : 206 669 000 à 249 209 300 kilomètres",
@@ -328,7 +328,7 @@ const planets = [
     placement: 5,
     span: 1,
     "planet-description":
-      "Jupiter est la cinquième planète du système solaire. Elle est aussi la plus grande par la taille et la masse devant Saturne, qui est comme elle une planète géante gazeuse. Elle a une composition similaire au Soleil, constituée principalement d'hydrogène",
+      "Jupiter est la cinquième planète du Système Solaire. Elle est aussi la plus grande par la taille et la masse devant Saturne, qui est comme elle une planète géante gazeuse. Elle a une composition similaire au Soleil, constituée principalement d'hydrogène",
     curiosites: {
       "short-description": [
         "Distance par rapport au Soleil : 740 679 835 à 816 001 807 kilomètres",
@@ -379,7 +379,7 @@ const planets = [
     placement: "Jupiter",
     span: 1,
     "planet-description":
-      "Io  est un satellite naturel de Jupiter. Avec plus de 400 volcans actifs, Io est l'objet le plus géologiquement actif du Système solaire.",
+      "Io est un satellite naturel de Jupiter. Avec plus de 400 volcans actifs, Io est l'objet le plus géologiquement actif du Système Solaire.",
     curiosites: {
       "short-description": ["Elle est l'une des méga-lunes de Jupiter"],
       "long-description": [
@@ -387,7 +387,7 @@ const planets = [
           title:
             "Sais-tu que l'activité volcanique de la Lune Io est chaotique ?",
           answer:
-            "Les volcans de Io, le corps le plus volcanique du système solaire, crachent des nuages de soufre jaune dans des colonnes faisant plus de 500 kilomètres de haut.",
+            "Les volcans de Io, le satellite le plus volcanique du Système Solaire, crachent des nuages de soufre jaune dans des colonnes faisant plus de 500 kilomètres de haut.",
         },
       ],
     },
@@ -411,7 +411,7 @@ const planets = [
     placement: "Jupiter",
     span: 1,
     "planet-description":
-      "Europe est un satellite naturel de Jupiter. Elle possède la surface la plus lisse de tous les objets célestes connus du Système solaire. Europe posséderait un océan d'eau souterrain d'une profondeur de l'ordre de 100 km qui pourrait éventuellement abriter une vie extraterrestre.",
+      "Europe est un satellite naturel de Jupiter. Cette lune possède la surface la plus lisse de tous les objets célestes connus du Système solaire. Europe posséderait un océan d'eau souterrain d'une profondeur de l'ordre de 100 km qui pourrait éventuellement abriter une vie extraterrestre.",
     curiosites: {
       "short-description": [
         "Elle est l'une des méga-lunes de Jupiter",
@@ -444,7 +444,7 @@ const planets = [
     bodyType: "moon",
     placement: "Jupiter",
     planets:
-      "Callisto est un satellite naturel de la planète Jupiter, découvert en 1610 par Galilée. Elle est la trest la troisième plus grande lune dans le Système solaire. Elle est composée approximativement à parts égales de roche et de glaces. Callisto pourrait posséder un petit noyau composé de silicates, ainsi qu'un océan d'eau liquide à plus de 100 kilomètres sous la surface de la lune. Ce dernier serait susceptible d'accueillir une vie extraterrestre.",
+      "Callisto est un satellite naturel de la planète Jupiter, découvert en 1610 par Galilée. Elle est la troisième plus grande lune dans le Système Solaire. Elle est approximativement composée à parts égales de roche et de glace. Callisto pourrait posséder un petit noyau composé de silicate, ainsi qu'un océan d'eau liquide à plus de 100 kilomètres sous la surface de la lune. Ce dernier serait susceptible d'accueillir une vie extraterrestre.",
     curiosites: {
       "short-description": [
         "L'autre nom de Callisto est Jupiter IV",
@@ -479,7 +479,7 @@ const planets = [
     placement: "Jupiter",
     span: 1,
     "planet-description":
-      "Ganymède est un satellite naturel de Jupiter. Elle est le plus gros satellite naturel de Jupiter mais également le plus gros de tout le Système solaire.",
+      "Ganymède est un satellite naturel de Jupiter. Cette lune est le plus gros satellite naturel de Jupiter mais également le plus gros de tout le Système Solaire.",
     curiosites: {
       "short-description": ["Elle est l'une des méga-lunes de Jupiter"],
       "long-description": [
@@ -509,7 +509,7 @@ const planets = [
     bodyType: "Planet",
     placement: 6,
     "planet-description":
-      "Saturne est la sixième planète du Système solaire par ordre d'éloignement au Soleil, et la deuxième plus grande par la taille et la masse après Jupiter, qui est comme elle une planète géante gazeuse. La caractéristique la plus célèbre de la planète est son système d'anneaux proéminent. Composés principalement de particules de glace et de poussières.",
+      "Saturne est la sixième planète du Système Solaire par ordre d'éloignement au Soleil, et la deuxième plus grande par la taille et la masse après Jupiter, qui est comme elle une planète géante gazeuse. La caractéristique la plus célèbre de la planète est son système d'anneaux proéminent, composé principalement de particules de glace et de poussières.",
     span: 2,
     curiosites: {
       "short-description": [
@@ -699,7 +699,7 @@ const planets = [
     placement: 7,
     span: 2,
     "planet-description":
-      "Uranus est la septième planète du Système solaire par ordre d'éloignement du Soleil. Il s'agit de la quatrième planète la plus massive du Système solaire et de la troisième plus grande par la taille. Uranus possède un système d’anneaux et de nombreux satellites naturels : on lui connaît 13 anneaux étroits et 27 lunes.",
+      "Uranus est la septième planète du Système Solaire par ordre d'éloignement du Soleil. Il s'agit de la quatrième planète la plus massive du Système Solaire et de la troisième plus grande par la taille. Uranus possède un système d’anneaux et de nombreux satellites naturels : on lui connaît 13 anneaux étroits et 27 lunes.",
     curiosites: {
       "short-description": [
         "Distance par rapport au Soleil : 2 734 998 229 à 3 006 318 143 kilomètres",
@@ -752,7 +752,7 @@ const planets = [
     placement: "Uranus",
     span: 1,
     "planet-description":
-      "Titania est le plus grand satellite naturel d'Uranus et le huitième par sa masse du Système solaire. Titania est constitué de glace et de roche en quantités approximativement égales. La surface de Titania, sombre et légèrement rouge, a été modelée à la fois par les impacts d'astéroïdes et de comètes.",
+      "Titania est le plus grand satellite naturel d'Uranus et le huitième par sa masse du Système Solaire. Titania est constitué de glace et de roche en quantités approximativement égales. La surface de Titania, sombre et légèrement rouge, a été modelée à la fois par les impacts d'astéroïdes et de comètes.",
     curiosites: {
       "short-description": [
         "Titania est découvert par William Herschel le 11 janvier 1787",
@@ -790,7 +790,7 @@ const planets = [
     placement: "Uranus",
     span: 1,
     "planet-description":
-      "Obéron est le plus éloigné des grands satellites naturels d'Uranus. C'est le deuxième satellite de cette planète tant par sa taille que sa masse et le neuvième du Système solaire en masse. Obéron est constitué de glace et de roche en quantités approximativement égales.  La surface d'Obéron, qui est sombre et légèrement rouge, semble avoir été principalement modelée par les impacts d'astéroïdes et de comètes.",
+      "Obéron est le plus éloigné des grands satellites naturels d'Uranus. C'est le deuxième satellite de cette planète tant par sa taille que sa masse et le neuvième du Système Solaire en masse. Obéron est constitué de glace et de roche en quantités approximativement égales. La surface d'Obéron, qui est sombre et légèrement rouge, semble avoir été principalement modelée par les impacts d'astéroïdes et de comètes.",
     curiosites: {
       "short-description": [
         "Obéron est découvert par William Herschel le 11 janvier 1787",
@@ -824,7 +824,7 @@ const planets = [
     placement: "Uranus",
     span: 1,
     "planet-description":
-      "Ariel  est un satellite naturel d'Uranus. Ariel est la plus brillante des lunes en orbite autour d'Uranus, ainsi que la troisième plus massive et la quatrième plus grande. Elle est principalement composée, à parts égales, de glaces et de roches. Ariel a une surface complexe comprenant de vastes terrains marqués par des cratères d'impact et traversés par un réseau de failles escarpées, de canyons et de crêtes. Cette surface montre des signes d'une activité géologique plus récente que les autres lunes d'Uranus.",
+      "Ariel est un satellite naturel d'Uranus. Ariel est la plus brillante des lunes en orbite autour d'Uranus, ainsi que la troisième plus massive et la quatrième plus grande. Elle est principalement composée, à parts égales, de glaces et de roches. Ariel a une surface complexe comprenant de vastes terrains marqués par des cratères d'impact et traversés par un réseau de failles escarpées, de canyons et de crêtes. Cette surface montre des signes d'une activité géologique plus récente que les autres lunes d'Uranus.",
     curiosites: {
       "short-description": [
         "Ariel, également connu sous le nom d'Uranus I, est un satellite naturel d'Uranus.",
@@ -892,7 +892,7 @@ const planets = [
     placement: 8,
     span: 1,
     "planet-description":
-      "Neptune est la huitième planète par ordre d'éloignement au Soleil et la plus éloignée connue du Système solaire. Il s'agit de la troisième planète la plus massive du Système solaire et de la quatrième plus grande par la taille.  Cependant, comme Uranus, son intérieur est principalement composé de glaces et de roches, d'où leur nom de « géantes de glaces ». Par ailleurs, le méthane est partiellement responsable de la teinte bleue de l'atmosphère de Neptune, bien que l'origine exacte de ce bleu azur reste encore inexpliquée.",
+      "Neptune est la huitième planète par ordre d'éloignement au Soleil et la plus éloignée connue du Système Solaire. Il s'agit de la troisième planète la plus massive du Système Solaire et de la quatrième plus grande par la taille. Cependant, comme Uranus, son intérieur est principalement composé de glaces et de roches, d'où leur nom de « géantes de glaces ». Par ailleurs, le méthane est partiellement responsable de la teinte bleue de l'atmosphère de Neptune, bien que l'origine exacte de ce bleu azur reste encore inexpliquée.",
     curiosites: {
       "short-description": [
         "Distance par rapport au Soleil : 4 459 753 056 à 4 537 039 826 kilomètres",
@@ -943,7 +943,7 @@ const planets = [
     placement: "Neptune",
     span: 1,
     "planet-description":
-      "Triton est le plus gros des quatorze satellites naturels de Neptune et le septième par distance croissante à cette dernière.  Triton est, avec Phobos4, la seule lune connue du Système solaire à se rapprocher de la planète autour de laquelle elle orbite.",
+      "Triton est le plus gros des quatorze satellites naturels de Neptune et le septième par distance croissante à cette dernière. Triton est, avec Phobos, la seule lune connue du Système Solaire à se rapprocher de la planète autour de laquelle elle orbite.",
     curiosites: {
       "short-description": ["Elle est l'une des quatorze lunes de Neptune"],
       "long-description": [

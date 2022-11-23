@@ -17,22 +17,22 @@ function Header() {
         </Link>
       </div>
       <ul className="navbar-links">
-        <li className="navbar-item slideInDown-1">
+        <li className="navbar-item home slideInDown-1">
           <Link to="/" className=" navbar-link">
             Home
           </Link>
         </li>
-        <li className="navbar-item slideInDown-2">
+        <li className="navbar-item planets slideInDown-2">
           <Link to="/planets" className=" navbar-link">
             Planètes
           </Link>
         </li>
-        <li className="navbar-item slideInDown-3">
+        <li className="navbar-item savoir slideInDown-3">
           <Link to="/savoir" className=" navbar-link">
             Le sais-tu?
           </Link>
         </li>
-        <li className="navbar-item slideInDown-4">
+        <li className="navbar-item quiz slideInDown-4">
           <Link to="/quiz" className=" navbar-link">
             Quizz
           </Link>

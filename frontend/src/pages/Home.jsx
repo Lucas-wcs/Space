@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import TypeWriter from "@components/TypeWriter";
 import Planet from "../components/home/Planet";
 import astronaut from "../assets/images/astronauts/astronaut_4.png";
-import cloud from "../assets/images/astronauts/cloud.png";
+import cloud from "../assets/images/bulle-rectangle.png";
 import "../css/home/Home.css";
-// import api from "../API-example/API-egz";
 
 function Home() {
   const [api, setApi] = useState([]);
   const [info, setInfo] = useState("Welcome");
+  const [card, setCard] = useState(false);
 
   function handleClick(planetName) {
+    setCard(true);
     setInfo(planetName);
   }
+  // window.addEventListener('click', () => {
+
+  // })
 
   useEffect(() => {
     axios
@@ -30,6 +35,8 @@ function Home() {
             <Planet
               key={item.id}
               name={item.englishName}
+              cardOn={card}
+              clickedPlanet={info}
               handle={(a) => handleClick(a)}
             />
           );
@@ -38,7 +45,7 @@ function Home() {
         <img className="cloud" src={cloud} alt="cloud" />
         <img className="astronaut" src={astronaut} alt="astronaut" />
         <div className="info">
-          <h1 className="p-info">{info}</h1>
+          <TypeWriter text={info} />
         </div>
       </div>
     </div>
