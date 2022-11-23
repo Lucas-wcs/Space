@@ -35,7 +35,7 @@
 .personnage {
   position: fixed;
   width: 35%;
-  bottom: 0;
+  bottom: -3%;
   right: 8%;
   transform: rotate(2deg);
 }
