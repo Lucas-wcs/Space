@@ -1006,7 +1006,7 @@ const planets = [
     id: "pluton",
     name: "Pluton",
     englishName: "Pluto",
-    isPlanet: false,
+    isPlanet: true,
     isMoon: false,
     bodyType: "Planet naine",
     placement: 9,
