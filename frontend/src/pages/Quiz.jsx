@@ -5,7 +5,6 @@ import Astro from "../components/quizz/Astro";
 import Certificat from "../components/quizz/Certificat";
 import Start from "../components/quizz/Start";
 import "../css/quizz/Quiz.css";
-// import { array } from "prop-types";
 
 function Quiz() {
   const [newQuest, setNewQuest] = useState(Math.floor(Math.random() * 21));
@@ -15,15 +14,21 @@ function Quiz() {
   const [numQuestions, setNumQuestions] = useState(3);
   const [start, setStart] = useState(false);
   const [compteur, setCompteur] = useState(0);
+  const [allIndexes, setAllIndexes] = useState([]);
 
   useEffect(() => {
     axios
       .get("http://localhost:5007/api/quiz")
       .then((result) => {
         setApi(result.data);
+
+        setAllIndexes([]);
+        for (let i = 0; i < result.data.length; i += 1) {
+          setAllIndexes((prev) => [...prev, i]);
+        }
       })
       .catch((err) => console.error(err));
-  }, []);
+  }, [start]);
 
   function updateStart() {
     setStart(!start);
@@ -43,12 +48,10 @@ function Quiz() {
     setResptrue(verif);
   }
 
-  const apiArray = api;
-
   function parent() {
-    const random = Math.floor(Math.random() * apiArray.length);
-    setNewQuest(random);
-    apiArray.splice(random, 1);
+    const random = Math.floor(Math.random() * allIndexes.length);
+    setNewQuest(allIndexes[random]);
+    allIndexes.splice(random, 1);
     setCompteur((prev) => prev + 1);
   }
 
